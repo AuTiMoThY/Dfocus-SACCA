@@ -35,7 +35,7 @@ class navAu extends PageUrlAu {
 			foreach ($Nav as $item => $url) {
 
 echo <<<_OUTPUT
-<li class="main_nav-item nav-IPC item$NavLen">
+<li class="main_nav-item nav-SACCA item$NavLen">
 	<a href="$url">
 		<span class="wrap"><span class="main_nav-icon"></span><span>$item</span></span>
 	</a>
@@ -48,7 +48,7 @@ _OUTPUT;
 			foreach ($Nav as $item => $url) {
 
 echo <<<_OUTPUT
-<li class="footer_nav-item nav-IPC item$NavLen">
+<li class="footer_nav-item nav-SACCA item$NavLen">
 	<a href="$url">
 		<span class="wrap"><span class="footer_nav-icon"></span><span>$item</span></span>
 	</a>
