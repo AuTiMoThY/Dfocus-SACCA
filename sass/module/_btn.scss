@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 button {
-	/*background-color:#2ba6cb;*/
-	/*border: 1px solid #2284a1;*/
-	/*margin:0 0 1.25em;*/
-	/*padding: 0.75em 1.5em 0.8125em 1.5em;*/
+	// background-color:#2ba6cb;
+	// border: 1px solid #2284a1;
+	// margin:0 0 1.25em;
+	// padding: 0.75em 1.5em 0.8125em 1.5em;
 	position:relative;
-	/*display:inline-block;*/
+	// display:inline-block;
 	color:#fff;
 	font-size:1em;
 	font-weight:bold;
@@ -17,23 +17,25 @@ button {
 	&.btn {
 		border: none;
 		background: none;
+		padding: 0;
+		margin: 0;
 	}
 }
 
 .btn {
-	@include bg(#727171);
-	position: relative;
-	border: 0;
-	cursor: pointer;
-	color: rgba(255, 255, 255, .84);
-	border-radius: 5px;
-	text-transform: uppercase;
-	text-decoration: none;
-	text-align:center;
-	@include transition(all 0.3s cubic-bezier(0.4, 0, .2, 1));
-	outline: 0!important;
-	// display: table;
-	display:inline-block;
+	// @include bg(#727171);
+	// position: relative;
+	// border: 0;
+	// cursor: pointer;
+	// color: rgba(255, 255, 255, .84);
+	// border-radius: 5px;
+	// text-transform: uppercase;
+	// text-decoration: none;
+	// text-align:center;
+	// @include transition(all 0.3s cubic-bezier(0.4, 0, .2, 1));
+	// outline: 0!important;
+	// // display: table;
+	// display:inline-block;
 	a, input, button {
 		padding: 6px 13px;
 		color: #fff;

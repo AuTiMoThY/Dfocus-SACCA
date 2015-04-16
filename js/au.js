@@ -6,6 +6,8 @@ function testAlertMsg1() {
 	alert("網頁建置中，敬請稍待!");
 }
 
+var isInitDone = false;
+
 var viewPortWidthHeight = function () {
 
 	var wh = {};
@@ -30,7 +32,34 @@ var viewPortWH = viewPortWidthHeight(),
 	viewPortH = viewPortWH.height;
 
 
+function isOpen($this, $thisClass) {
+	if (!($this.hasClass('open'))) {
+		$this.addClass('open');
+		// quickBarBlockOpen();
+	} else{
+		$thisClass.removeClass('open');
+		// quickBarBlockClose();
+	};
+}
 
+function quickBarBlockCtrl(){
+	$(".quick_login").click(function() {
+		isOpen($(".quick_login-wrap"), $(".quick_login-wrap.open"))
+	});
+	$(".quick_login-wrap").mouseleave(function() {
+		isOpen($(".quick_login-wrap"), $(".quick_login-wrap.open"))
+	});
+	$(".quick_cart").click(function() {
+		isOpen($(".quick_cart-wrap"), $(".quick_cart-wrap.open"))
+	});
+	$(".quick_cart-wrap").mouseleave(function() {
+		isOpen($(".quick_cart-wrap"), $(".quick_cart-wrap.open"))
+	});
+}
+
+$(function() {
+	quickBarBlockCtrl();
+});
 
 // $(function(){
 //   var toggles = $('.toggle a'),
@@ -48,3 +77,12 @@ var viewPortWH = viewPortWidthHeight(),
 //   });
 //   toggles.first().click();
 // });
+// 
+var initAfterLoaded = function() {
+	if (!isInitDone) {
+
+	}
+	isInitDone = true;
+}
+
+$(window).load(initAfterLoaded);

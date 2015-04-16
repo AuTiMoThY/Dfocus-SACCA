@@ -245,28 +245,41 @@
 <section class="wall-bar">
 	<div class="wrapper">
 		<div class="slogan">
-			<div class="slogan-cnt">
-				<h2>所有的故事<br>都是從眼睛看到船的那一刻開始...</h2>
-				<div class="footLogo"><?php include_once 'images/logo.svg'; ?></div>
-				<p>
-					台灣這片土地，<br>
-					有著一群愛閱讀、愛聽故事的孩子。<br>
-					<br>
-					他們唱歌、寫詩， 長大成了作家、老師、父親和母親，<br>
-					赤子之心依舊青春跳動。<br>
-					<br>
-					時間使人成長， 他們長出力量， 許下願望，<br>
-					要做「童心守護」的使者。<br>
-					這就是「四也」！
-				</p>
-			</div>
+			<h2>所有的故事<br>都是從眼睛看到船的那一刻開始...</h2>
+			<div class="footLogo"><?php include 'images/logo.svg'; ?></div>
+			<p>
+				台灣這片土地，<br>
+				有著一群愛閱讀、愛聽故事的孩子。<br>
+				<br>
+				他們唱歌、寫詩， 長大成了作家、老師、父親和母親，<br>
+				赤子之心依舊青春跳動。<br>
+				<br>
+				時間使人成長， 他們長出力量， 許下願望，<br>
+				要做「童心守護」的使者。<br>
+				這就是「四也」！
+			</p>
 		</div>
 	</div>
 </section>
 
 <section class="fixBg">
-	
+	<div class="slogan2-wrap">
+		<section class="wall-bar slogan2">
+			<div class="wrapper">
+				<p>船象徵「冒險與遠航」，是許多經典故事的起源。<br>我們願成為孩子們的舵手，和他們一起乘風破浪，從閱讀之海捕捉成長的養分。<br>同時，也用我們的眼睛，守護孩子們的冒險旅程。</p>
+				<div class="footLogo"><?php include 'images/logo.svg'; ?></div>
+			</div>
+		</section>
+	</div>
 </section>
+
+<?php
+// -------------------------------
+// Footer
+// -------------------------------
+  include_once 'inc/Footer.php';
+?>
+
 
 <?php
 // -------------------------------

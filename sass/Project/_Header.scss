@@ -117,45 +117,296 @@ nav {
 // 		}
 // 	}// .main_nav-icon  END
 // }
-// /*========================================================================*\
-// 		>>	quick_login
-// \*========================================================================*/
-// .quick_login {
-// 	.login_btn {
-// 		@include bg(lighten(#000, 23%));
-// 		color: #fff;
-// 		@include adjust-font-size-to(13px);
-// 		padding: 0.3em 0.8em;
-// 		margin-bottom: 3px;
-// 		border-radius: 14px;
-// 		display: block;
-// 		text-align: center;
-// 		&:hover {
-// 			box-shadow: 1px 1px 3px #333;
-// 			@include hover;
-// 		}
-// 	}
-// 	.fb_btn {
-// 		color: #fff;
-// 		@include adjust-font-size-to(13px);
-// 		display: block;
-// 		.icon {
-// 			@include wh(60px, 12px);
-// 			// @include bg('fbLogo.png');
-// 			background-size: cover;
-// 			display: inline-block;
-// 		}
-// 		&:hover {
-// 			@include hover;
-// 		}
-// 	}
-// }
-// /*========================================================================*\
-// 		>>	quick_bar
-// \*========================================================================*/
-// .quick_bar {
 
-// }
+
+/*========================================================================*\
+		>>	quick_bar
+\*========================================================================*/
+$triW: 14px;
+$triW2: 16px;
+.quick_bar {
+	.search_form {
+		position: relative;
+		&-inp {
+			width: 245px;
+			height: 30px;
+			border: 1px solid #909090;
+			border-radius: 8px;
+			overflow: hidden;
+			input {
+				@include wh;
+				padding: 0 0.5em;
+				border: none;
+				@include adjFontSize(13px, 1.2);
+			}
+		}
+		&-btn {
+			display: block;
+			position: absolute;
+			top: 0.4em;
+			right: 0.5em;
+			.btn {
+				@include wh(20);
+				@include bg-i(0, 0);
+				border-radius: 0;
+				&:hover {
+					box-shadow: none;
+					@include bg(transparent);
+				}
+			}
+			&:active {
+				@include hover();
+			}
+		}
+	}
+	.padding {
+		display: block;
+		position: absolute;
+		top: -10%;
+		left: -40%;
+		z-index: 78;
+		@include wh(180%);
+		background: none;
+	}
+	&-block {
+		// position: relative;
+		.tri {
+			position: absolute;
+			top: 0.2em;
+			// right: 42px + ($triW * 1.5) - 2px;
+			@include triangle(top, #cbcbcb, $triW2);
+			z-index: 80;
+			&-after {
+				position: absolute;
+				top: 0.3em;
+				// right: 42px + ($triW * 1.5);
+				@include triangle(top, #fff, $triW);
+				z-index: 81;
+			}
+		}
+		.toggle {
+			@include transition(all 0.3s ease(in-out-cubic));
+		}
+	}
+}
+
+/* >>> quick_login **************************************************/
+%quickBarBtn {
+	position: relative;
+	@include circle(30px);
+	@include bg(#3c3d41);
+	overflow: hidden;
+	margin-left: 12px;
+	cursor: pointer;
+	&:hover {
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+	}
+	&:active {
+		@include hover;
+	}
+}
+%quickBarWrap {
+	position: absolute;
+	right: 0;
+	@include opacity(0);
+	z-index: -1;
+	&.open {
+		z-index: 80;
+		@include opacity(1);
+	}
+}
+%quickBarBlock {
+	position: relative;
+	z-index: 80;
+	margin-top: 1.1em;
+	padding-top: 1em;
+	@include bg(#fff);
+	border: 1px solid #cbcbcb;
+}
+%quickBarBlockBtn {
+	display: block;
+	@include wh(108, 30);
+	border-radius: 5px;
+}
+.quick_login {
+	@extend %quickBarBtn;
+	&:before {
+		@include psudoClass;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		@include wh(20, 25);
+		@include bg-i(-21, 0);
+	}
+	&-wrap {
+		@extend %quickBarWrap;
+		.tri {
+			right: 42px + ($triW * 1.5) - 2px;
+			&-after {
+				right: 42px + ($triW * 1.5);
+			}
+		}
+	}
+	&-block {
+		@include wh(340, 155);
+		@extend %quickBarBlock;
+	}
+}
+.u_login {
+	&-form {
+		width: 270px;
+		margin: auto;
+		// padding-top: 1em;
+	}
+	&-inp {
+		display: block;
+		width: 100%;
+		height: 30px;
+		margin-bottom: 0.8em;
+		border: 1px solid #909090;
+		overflow: hidden;
+		input {
+			@include wh;
+			padding: 0 0.5em;
+			border: none;
+			@include adjFontSize(13px, 1.2);
+		}
+	}
+	&-btn {
+		@extend %quickBarBlockBtn;
+		.btn {
+			@include wh;
+			@include bg-i(0, -29);
+		}
+	}
+	.u_register {
+		color: $Grey_color1;
+		@include adjFontSize(15px);
+		line-height: 30px;
+		text-decoration: underline;
+	}
+}
+
+.quick_cart {
+	@extend %quickBarBtn;
+	&:before {
+		@include psudoClass;
+		position: absolute;
+		top: 5px;
+		left: -1px;
+		@include wh(28, 19);
+		@include bg-i(-42, 0);
+	}
+	&-wrap {
+		@extend %quickBarWrap;
+		.tri {
+			right: -4px + ($triW * 1.5) - 2px;
+			&-after {
+				right: -4px + ($triW * 1.5);
+			}
+		}
+	}
+	&-block {
+		@include wh(340, 470);
+		@extend %quickBarBlock;
+	}
+}
+$u_cartItemH: 145px;
+.u_cart {
+	&-inf {
+		color: #000;
+		@include adjFontSize(13px);
+		font-weight: bold;
+		text-align: center;
+	}
+	&-form {
+		width: 100%;
+		border-top: 1px solid #cbcbcb;
+		margin-top: 1.3em;
+		// margin-bottom: 1em;
+		padding: 0 1.2em;
+	}
+	&-list {
+		width: 100%;
+		height: $u_cartItemH*2+1;
+		overflow-y: scroll;
+	}
+	&-item {
+		position: relative;
+		width: 100%;
+		height: $u_cartItemH;
+		padding: 0.8em 0;
+		border-top: 1px solid #cbcbcb;
+		&:first-of-type {
+			border-top: none;
+		}
+		figcaption {
+			width: 65%;
+			padding-left: 0.5em;
+			color: #000;
+			@include adjFontSize(13px);
+		}
+	}
+	&-pic {
+		@include wh(85, 120);
+	}
+	&-deleBtn {
+		position: absolute;
+		display: block;
+		right: 0.5em;
+		bottom: 0.8em;
+		width: 40px;
+		.btn {
+			width: 100%;
+			border: 1px solid #cbcbcb;
+			@include background-image(linear-gradient(#f6f6f6, #dddddd));
+			border-radius: 2px;
+			@include adjFontSize(13px);
+			font-weight: normal;
+			@include transition(all 0.3s $easeInOutCubic);
+			&:hover {
+				@include background-image(linear-gradient(darken(#f6f6f6, 10%), darken(#dddddd, 10%)));
+			}
+			&:active {
+				@include hover;
+			}
+		}
+	}
+	&-total {
+		width: 100%;
+		margin-top: 1.5em;
+		padding-top: 1em;
+		border-top: 1px solid #cbcbcb;
+		p {
+			width: 100%;
+			margin-bottom: 0.5em;
+			color: $Grey_color1;
+			@include adjFontSize(13px);
+			font-weight: bold;
+			text-align: right;
+		}
+	}
+	&-btn {
+		@extend %quickBarBlockBtn;
+		margin: auto;
+		padding: 0;
+		.btn {
+			@include wh;
+			@include bg-i(0, -61);
+		}
+	}
+	.book {
+		&-name {
+			min-height: 33px;
+			margin-bottom: 0.8em;
+			// color: #000;
+			// @include adjFontSize(13px);
+			line-height: 1.3;
+			font-weight: bold;
+		}
+	}
+}
+
 // .social {
 // 	height: 100%;
 // 	padding: 4px 0;

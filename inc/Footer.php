@@ -1,87 +1,60 @@
 <footer class="global_ft">
 	<div class="wrapper">
-		<section class="affiliate col">
-			<div class="affiliate-block">
-				<!-- <p class="hide_txt">affiliate with</p> -->
-				<div class="pic"><img src="images/pic2.png" alt=""></div>
-			</div>
-		</section>
-		<section class="epaper col">
-			<div class="epaper-block">
-				<p><span class="hide_txt">馬上訂閱所有人都在關注的財金電子報！再也不要錯過賺錢熱訊！</span></p>
-				<form action="">
-					<input type="text" name="" id="" class="epaper-inp" placeholder="請輸入您的EMAIL">
-					<span class="btn btn-IPC"><input type="submit" name="" id="" class="epaper-ft-submit" value="SEND"></span>
-				</form>
-			</div>
-			<nav class="footer_nav">
-				<ul>
-				<?php footerNavAu(); ?>
-				<?php
-					// $mainNav = array(
-					// 				'首頁'        => $indexPageUrlAu,
-					// 				'書城'        => "index_bookShop.php",
-					// 				'課程'        => $webPageBuild,
-					// 				'財金觀點'    => $webPageBuild,
-					// 				'哈燒快訊'    => $webPageBuild,
-					// 				'我的IPC'     => $webPageBuild);
-					// $mainNavLen = 0;
-					// $mainNavLen ++;
-
-					// foreach ($mainNav as $item => $url) {
-				?>
-<!-- 					<li class="footer_nav-item nav-IPC item<?php //echo $mainNavLen; ?>">
-						<a href="<?php //echo $url; ?>">
-							<span class="wrap"><span class="footer_nav-icon"></span><span><?php //echo $item; ?></span></span>
-						</a>
-					</li> -->
-				<?php
-					// 	++$mainNavLen;
-					// }
-				?>
-
+		<div class="logo col"><img src="images/logo-footer.jpg" alt="四也出版 SACCA"></div>
+		<div class="sitemap-wrap col">
+			<div class="sitemap-col col">
+				<div class="pattern"></div>
+				<ul class="sitemap-row">
+					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">關於公司--快樂文創</a></li>
+					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">四也出版的故事</a></li>
+					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">公司團隊(顧問群)</a></li>
+					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">發行人的話</a></li>
 				</ul>
-			</nav>
-		</section>
-		<section class="sitemap col">
-			<nav class="cf">
-				<div class="col left small-4">
-					<section class="sitemap-seg">
-						<h2>寰宇財金網</h2>
-						<ul>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">關於寰宇</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">企業合作</a></li>
-						</ul>
-					</section>
-				</div>
-				<div class="col left small-4">
-					<section class="sitemap-seg">
-						<h2>財金人物</h2>
-						<ul>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">達人專區</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">講師專區</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">作者專區</a></li>
-						</ul>
-					</section>
-				</div>
-				<div class="col left small-4">
-					<section class="sitemap-seg">
-						<h2>顧客服務</h2>
-						<ul>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">連絡我們</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">相關連結</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">常見問題</a></li>
-							<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">購買據點</a></li>
-						</ul>
-					</section>
-				</div>
-			</nav>
-		</section>
-	</div>
-</footer>
-<footer class="copyright">
-	<div class="wrapper cf">
-		<p class="left">Copyright ©2014 IPC寰宇財金網版權所有 All Rights Reserved.</p>
-		<p class="right">Designed by <a href="http://ecmd.com.tw/" target="_blank">DFOCUS</a></p>
+				<ul class="sitemap-row">
+					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">最新訊息</a></li>
+				</ul>
+			</div>
+			<div class="sitemap-col col">
+				<div class="pattern"></div>
+				<ul class="sitemap-row">
+					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">教學資源分享</a></li>
+				</ul>
+				<ul class="sitemap-row">
+					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">合作相關</a></li>
+					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">作家有約</a></li>
+					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">實地走讀</a></li>
+					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">文學營</a></li>
+				</ul>
+			</div>
+			<div class="sitemap-col col">
+				<div class="pattern"></div>
+				<ul class="sitemap-row">
+					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">四也書城</a></li>
+				</ul>
+				<ul class="sitemap-row">
+					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">會員中心</a></li>
+				</ul>
+				<ul class="sitemap-row">
+					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">購物車</a></li>
+				</ul>
+			</div>
+			<div class="sitemap-col col">
+				<div class="pattern"></div>
+				<ul class="sitemap-row">
+					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">臺灣歷史記憶箱</a></li>
+				</ul>
+				<ul class="sitemap-row">
+					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">活動紀錄報導</a></li>
+				</ul>
+			</div>
+		</div><!-- .sitemap-wrap  END  !! -->
+		<div class="footer-inf col">
+			<ul>
+				<li class="sacca-tele"><i class="icon ib"></i>客服電話：(02)2506-6111</li>
+				<li class="sacca-time"><i class="icon ib"></i>服務時間：週一至週五 9：00～18：00</li>
+				<li class="sacca-addr"><i class="icon ib"></i>地    址：台北市中山區復興北路290號15樓</li>
+				<li class="sacca-mail"><i class="icon ib"></i>客服信箱：writer@4yabooks.com</li>
+			</ul>
+		</div>
 	</div>
 </footer>

@@ -145,6 +145,15 @@ button.icon {
 	border: none;
 }
 .icon {
-
+	@each $sacca-foot, $w, $x in
+		(tele, 18, -71),
+		(time, 26, -90),
+		(addr, 23, -117),
+		(mail, 19, -141) {
+		.sacca-#{$sacca-foot} & {
+			@include wh($w, 21);
+			@include bg-i($x, 0);
+		}
+	}
 
 }//.icon
