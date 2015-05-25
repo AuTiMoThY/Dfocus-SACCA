@@ -58,6 +58,7 @@ html, body {
 
 body {
   font-family: "PMingLiU", \65B0\7EC6\660E\4F53, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 .pic {
