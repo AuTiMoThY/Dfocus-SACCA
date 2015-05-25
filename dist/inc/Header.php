@@ -26,7 +26,7 @@
 </script>
 -->
 <?php 
-require_once 'inc/aunav.php';
+require_once 'dist/inc/aunav.php';
 ?>
 
 <div id="top"></div>
@@ -86,7 +86,7 @@ require_once 'inc/aunav.php';
 							<ul class="u_cart-list">
 								<li class="u_cart-item">
 									<figure>
-										<div class="u_cart-pic pic col"><img src="images/temp/tem_book1-85.jpg" alt=""></div>
+										<div class="u_cart-pic pic col"><img src="dist/images/temp/tem_book1-85.jpg" alt=""></div>
 										<figcaption class="col">
 											<div class="book-name">神探啄九下</div>
 											<div class="book-count">數量：&nbsp;1&nbsp;本</div>
@@ -99,7 +99,7 @@ require_once 'inc/aunav.php';
 								</li>
 								<li class="u_cart-item">
 									<figure>
-										<div class="u_cart-pic pic col"><img src="images/temp/tem_book2-85.jpg" alt=""></div>
+										<div class="u_cart-pic pic col"><img src="dist/images/temp/tem_book2-85.jpg" alt=""></div>
 										<figcaption class="col">
 											<div class="book-name">月光三部曲I 淡水女巫的魔幻地圖</div>
 											<div class="book-count">數量：&nbsp;1&nbsp;本</div>
@@ -112,7 +112,7 @@ require_once 'inc/aunav.php';
 								</li>
 								<li class="u_cart-item">
 									<figure>
-										<div class="u_cart-pic pic col"><img src="images/temp/tem_book1-85.jpg" alt=""></div>
+										<div class="u_cart-pic pic col"><img src="dist/images/temp/tem_book1-85.jpg" alt=""></div>
 										<figcaption class="col">
 											<div class="book-name">月光三部曲II 淡水阿給的奇妙口味</div>
 											<div class="book-count">數量：&nbsp;1&nbsp;本</div>
