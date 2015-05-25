@@ -10,12 +10,12 @@
 
 <link rel="shortcut icon" href="favicon.ico" />
 
-<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="dist/css/reset.css" />
 <link rel="stylesheet" href="plugin/bootstrap-material-design/css/ripples.css">
 <link rel="stylesheet" href="plugin/bootstrap-material-design/css/material.css">
-<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="dist/css/font-awesome.css">
 <link rel="stylesheet" href="plugin/FlexSlider/flexslider.css" />
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="dist/css/style.css" />
 
-<script src="js/libs/modernizr-2.7.1.dev.js"></script>
-<script src="js/ModernizrAu.js"></script>
+<script src="dist/js/libs/modernizr-2.7.1.dev.js"></script>
+<script src="dist/js/ModernizrAu.js"></script>
