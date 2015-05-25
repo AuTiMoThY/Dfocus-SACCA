@@ -7,6 +7,27 @@ footer {
 			margin: 3em 1.5em;
 		}
 	}
+	&.copyright {
+		position: relative;
+		@include background-image(linear-gradient(#626060, #727171 30%, #727171 40%, #474646));
+		color: #fff;
+		font-size: em(11);
+		line-height: 34px;
+		letter-spacing: 1px;
+		&:before {
+			@include psudoClass;
+			@include wh(100%, 2px);
+			@include bg(#e60012);
+		}
+		img {
+			transform: translateY(-2px);
+		}
+		a {
+			&:hover {
+				@include hover();
+			}
+		}
+	}
 }
 
 

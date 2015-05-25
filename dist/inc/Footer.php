@@ -1,6 +1,6 @@
 <footer class="global_ft">
 	<div class="wrapper">
-		<div class="logo col"><img src="images/logo-footer.jpg" alt="四也出版 SACCA"></div>
+		<div class="logo col"><img src="<?php path_au('img'); ?>logo-footer.jpg" alt="四也出版 SACCA"></div>
 		<div class="sitemap-wrap col">
 			<div class="sitemap-col col">
 				<div class="pattern"></div>
@@ -49,12 +49,27 @@
 			</div>
 		</div><!-- .sitemap-wrap  END  !! -->
 		<div class="footer-inf col">
-			<ul>
+		<form action="" class="form-epaper">
+			<h3 class="sacca-mail"><i class="icon ib"></i>訂閱電子報</h3>
+			<p>僅需在以下攔位輸入您的 E-mail 郵件地址<br>即可收到我們不定期更新的四也書訊電子報</p>
+			<input type="text" name="" id="" class="input__field" placeholder="Your e-mail address">
+			<button type="button" class="btn form-submit">立即訂閱</button>
+<!-- 			<ul>
 				<li class="sacca-tele"><i class="icon ib"></i>客服電話：(02)2506-6111</li>
 				<li class="sacca-time"><i class="icon ib"></i>服務時間：週一至週五 9：00～18：00</li>
 				<li class="sacca-addr"><i class="icon ib"></i>地    址：台北市中山區復興北路290號15樓</li>
 				<li class="sacca-mail"><i class="icon ib"></i>客服信箱：writer@4yabooks.com</li>
-			</ul>
+			</ul> -->
+		</form>
+		</div>
+	</div><!-- .wrapper -->
+</footer>
+<footer class="copyright">
+	<div class="wrapper cf">
+		<div class="left">Copyright © 2011~2015 四也出版公司 All rights reserved │ 
+		客服電話：(02)2506-6111 │ 地 址：台北市中山區復興北路290號15樓 │ 客服信箱：writer@4yabookscom</div>
+		<div class="right">
+			<?php designByDFocus(); ?>
 		</div>
 	</div>
 </footer>

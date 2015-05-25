@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.form {
+	&-epaper {
+		position: relative;
+		.sacca-mail {
+			text-indent: 2.5em;
+		}
+		p {
+			color: $Grey_color1;
+			@include adjFontSize(13px, 1);
+			letter-spacing: 1px;
+		}
+		.input__field {
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid #909090;
+		}
+	}
+	&-submit.btn.btn {
+		width: 100%;
+		margin-top: 0.5em;
+		@include background-image(linear-gradient(#8e8e8e, #575657));
+		border-radius: 5px;
+		color: #fff;
+		@include adjFontSize(13px, 1.2);
+		font-weight: normal;
+		letter-spacing: 1px;
+	}
+}

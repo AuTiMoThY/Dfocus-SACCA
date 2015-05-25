@@ -7,11 +7,8 @@
 class PageUrlAu {
 	public $webPageBuild    = "javascript: alert('網頁建置中，敬請稍待!');";
 	public $indexPage       = "index.php";
-	public $bookIndexPage   = "index_bookShop.php";
-	public $IPCIndexPage    = "index_myIPC.php";
-	public $eventsIndexPage = "index_events.php";
-	public $bookCntPage     = "bookCnt.php";
-	public $loginPage       = "login.php";
+	public $about   = "about.php";
+
 
 }
 /**
@@ -23,11 +20,8 @@ class navAu extends PageUrlAu {
 
 		$Nav = array(
 						'首頁'        => $this->indexPage,
-						'書城'        => $this->bookIndexPage,
-						'課程'        => $this->eventsIndexPage,
-						'財金觀點'    => $this->webPageBuild,
-						'哈燒快訊'    => $this->webPageBuild,
-						'我的IPC'     => $this->IPCIndexPage);
+						'關於四也'    => $this->about,
+						);
 		$NavLen = 0;
 		$NavLen ++;
 

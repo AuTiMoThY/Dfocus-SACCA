@@ -3,6 +3,10 @@
 	@include bg($normal_color1);
 }
 
+.header_group {
+	position: relative;
+	width: 100%;
+}
 /*========================================================================*\
 		>>	global_hd  quick_bar  logo
 \*========================================================================*/
@@ -31,7 +35,45 @@ header {
 			@include wh;
 		}
 	}// header#logo  END
+	&.nav_bar {
+		position: absolute;
+		top: 90px;
+		width: 100%;
+		@include bg(rgba(#000, 0.6));
+		ul {
+			display: table;
+			margin: auto;
+		}
+		li {
+			&::before {
+				content: '|';
+				@extend %nav_bar_txt;
+			}
+			&:first-of-type {
+				&::before {
+					display: none;
+				}
+			}
+		}
+		a {
+			padding: 0 1.5em;
+			@extend %nav_bar_txt;
+			letter-spacing: 1px;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: $normal_color1;
+			}
+		}
+	}
 }
+%nav_bar_txt {
+	color: #fff;
+	font-weight: bold;
+	@include adjFontSize(15px, 1.5);
+}
+
+
+
 /*========================================================================*\
 		>>	nav
 \*========================================================================*/
@@ -55,7 +97,7 @@ nav {
 				@include bg($normal_color1);
 				@include transition(all 0.3s ease(out-cubic));
 			}
-			&:hover {
+			&:hover, &.active {
 				box-shadow: inset 5px 0 10px 0px rgba(#cececf, 0.6), inset -5px 0 10px 0px rgba(#cececf, 0.6);
 				&:before {
 					content: '';

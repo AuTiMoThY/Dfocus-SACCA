@@ -11,6 +11,7 @@
 <link rel="shortcut icon" href="favicon.ico" />
 
 <link rel="stylesheet" href="dist/css/reset.css" />
+<!-- <link rel="stylesheet" href="dist/css/animate.css" /> -->
 <link rel="stylesheet" href="plugin/bootstrap-material-design/css/ripples.css">
 <link rel="stylesheet" href="plugin/bootstrap-material-design/css/material.css">
 <link rel="stylesheet" href="dist/css/font-awesome.css">

@@ -1,13 +1,9 @@
-<?php include_once 'config.php'; ?>
-<!doctype html>
-<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="zh"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="zh"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="zh"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="zh"> <![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" lang="zh"><!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<?php 
+	include_once 'config.php';
+	include_once INC_PATH.'headleader.php';
+	require_once INC_PATH.'aunav.php';
+?>
+
 <title>四也出版 ╳ 快樂文創</title>
 
 <?php
@@ -16,17 +12,18 @@
 // CSS
 // Script in the HEAD
 // -------------------------------
-  include_once 'dist/inc/HEAD.php';
- ?>
+  include_once INC_PATH.'head.php';
+?>
 
 
 <?php
 //app
-  include_once 'dist/inc/Social.php';
- ?>
+//  include_once INC_PATH.'social.php';
+?>
 
 <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
 </head>
@@ -37,25 +34,25 @@
 // -------------------------------
 // header
 // -------------------------------
-  include_once 'dist/inc/Header.php';
+  include_once INC_PATH.'header.php';
 ?>
 <section class="banner">
 	<div id="slider" class="flexslider">
 		<ul class="slides">
-			<li><img src="<?php path_au(img); ?>banner1.jpg" alt=""></li>
-			<li><img src="<?php path_au(img); ?>banner2.jpg" alt=""></li>
-			<li><img src="<?php path_au(img); ?>banner3.jpg" alt=""></li>
-			<li><img src="<?php path_au(img); ?>banner2.jpg" alt=""></li>
-			<li><img src="<?php path_au(img); ?>banner1.jpg" alt=""></li>
+			<li><img src="<?php path_au('img'); ?>banner1.jpg" alt=""></li>
+			<li><img src="<?php path_au('img'); ?>banner2.jpg" alt=""></li>
+			<li><img src="<?php path_au('img'); ?>banner3.jpg" alt=""></li>
+			<li><img src="<?php path_au('img'); ?>banner2.jpg" alt=""></li>
+			<li><img src="<?php path_au('img'); ?>banner1.jpg" alt=""></li>
 		</ul>
 	</div>
 	<div id="carousel" class="flexslider">
 		<ul class="slides">
-			<li><img src="<?php path_au(img); ?>banner1.jpg" alt=""></li>
-			<li><img src="<?php path_au(img); ?>banner2.jpg" alt=""></li>
-			<li><img src="<?php path_au(img); ?>banner3.jpg" alt=""></li>
-			<li><img src="<?php path_au(img); ?>banner2.jpg" alt=""></li>
-			<li><img src="<?php path_au(img); ?>banner1.jpg" alt=""></li>
+			<li><img src="<?php path_au('img'); ?>banner1.jpg" alt=""></li>
+			<li><img src="<?php path_au('img'); ?>banner2.jpg" alt=""></li>
+			<li><img src="<?php path_au('img'); ?>banner3.jpg" alt=""></li>
+			<li><img src="<?php path_au('img'); ?>banner2.jpg" alt=""></li>
+			<li><img src="<?php path_au('img'); ?>banner1.jpg" alt=""></li>
 		</ul>
 	</div>
 </section>
@@ -68,7 +65,7 @@
 			<div class="wall-block wall-1 sacca_books">
 				<figure class="wall-figure">
 					<a href=""></a>
-					<div class="pic"><img src="<?php path_au(temp); ?>index_pic1.jpg" alt=""></div>
+					<div class="pic"><img src="<?php path_au('temp'); ?>index_pic1.jpg" alt=""></div>
 					<figcaption>
 						<h3>四也全書</h3>
 						<p>
@@ -88,7 +85,7 @@
 			<div class="wall-block wall-2 sacca_news">
 				<figure class="wall-figure">
 					<a href=""></a>
-					<div class="pic"><img src="dist/images/temp/index_pic3.jpg" alt=""></div>
+					<div class="pic"><img src="<?php path_au('temp'); ?>index_pic3.jpg" alt=""></div>
 					<figcaption>
 						<h3>最新訊息</h3>
 						<p class="news-time txt-sub">2015/03/11</p>
@@ -111,7 +108,7 @@
 			<div class="wall-block wall-3 sacca_resource">
 				<figure class="wall-figure">
 					<a href=""></a>
-					<div class="pic"><img src="dist/images/temp/index_pic2.jpg" alt=""></div>
+					<div class="pic"><img src="<?php path_au('temp'); ?>index_pic2.jpg" alt=""></div>
 					<figcaption>
 						<h3>教學資源分享</h3>
 						<p>
@@ -131,7 +128,7 @@
 			<div class="wall-block wall-4 sacca_activity">
 				<figure class="wall-figure">
 					<a href=""></a>
-					<div class="pic"><img src="dist/images/temp/index_pic4.jpg" alt=""></div>
+					<div class="pic"><img src="<?php path_au('temp'); ?>index_pic4.jpg" alt=""></div>
 					<figcaption>
 						<h3>活動紀錄報導</h3>
 						<p class="activity-time txt-sub">2015/03/07</p>
@@ -157,7 +154,7 @@
 						<li>
 							<figure class="wall-figure">
 								<a href=""></a>
-								<div class="pic"><img src="dist/images/temp/index_banner2_1.jpg" alt=""></div>
+								<div class="pic"><img src="<?php path_au('temp'); ?>index_banner2_1.jpg" alt=""></div>
 								<figcaption>
 									<h3>臺灣歷史記憶箱</h3>
 									<p class="sacca_wallSlider-subTitle txt-sub">│ 臺灣歷史專欄 │</p>
@@ -177,7 +174,7 @@
 						<li>
 							<figure class="wall-figure">
 								<a href=""></a>
-								<div class="pic"><img src="dist/images/temp/index_banner2_2.jpg" alt=""></div>
+								<div class="pic"><img src="<?php path_au('temp'); ?>index_banner2_2.jpg" alt=""></div>
 								<figcaption>
 									<h3>臺灣歷史記憶箱</h3>
 									<p class="sacca_wallSlider-subTitle txt-sub">│ 世界歷史專欄 │</p>
@@ -197,7 +194,7 @@
 						<li>
 							<figure class="wall-figure">
 								<a href=""></a>
-								<div class="pic"><img src="dist/images/temp/index_banner2_3.jpg" alt=""></div>
+								<div class="pic"><img src="<?php path_au('temp'); ?>index_banner2_3.jpg" alt=""></div>
 								<figcaption>
 									<h3>臺灣歷史記憶箱</h3>
 									<p class="sacca_wallSlider-subTitle txt-sub">│ 主題歷史專欄 │</p>
@@ -231,11 +228,11 @@
 			<div class="wall-block wall-7">
 				<div id="bannerSlider" class="flexslider">
 					<ul class="slides">
-						<li><img src="dist/images/temp/index_banner3_1.jpg" alt=""></li>
-						<li><img src="dist/images/temp/index_banner3_2.jpg" alt=""></li>
-						<li><img src="dist/images/temp/index_banner3_3.jpg" alt=""></li>
-						<li><img src="dist/images/temp/index_banner3_4.jpg" alt=""></li>
-						<li><img src="dist/images/temp/index_banner3_5.jpg" alt=""></li>
+						<li><img src="<?php path_au('temp'); ?>index_banner3_1.jpg" alt=""></li>
+						<li><img src="<?php path_au('temp'); ?>index_banner3_2.jpg" alt=""></li>
+						<li><img src="<?php path_au('temp'); ?>index_banner3_3.jpg" alt=""></li>
+						<li><img src="<?php path_au('temp'); ?>index_banner3_4.jpg" alt=""></li>
+						<li><img src="<?php path_au('temp'); ?>index_banner3_5.jpg" alt=""></li>
 					</ul>
 				</div>
 			</div><!-- /.wall-block wall-7  END  !! -->
@@ -247,7 +244,7 @@
 	<div class="wrapper">
 		<div class="slogan">
 			<h2>所有的故事<br>都是從眼睛看到船的那一刻開始...</h2>
-			<div class="footLogo"><?php include 'dist/images/logo.svg'; ?></div>
+			<div class="footLogo"><?php include IMG_PATH.'logo.svg'; ?></div>
 			<p>
 				台灣這片土地，<br>
 				有著一群愛閱讀、愛聽故事的孩子。<br>
@@ -268,7 +265,7 @@
 		<section class="wall-bar slogan2">
 			<div class="wrapper">
 				<p>船象徵「冒險與遠航」，是許多經典故事的起源。<br>我們願成為孩子們的舵手，和他們一起乘風破浪，從閱讀之海捕捉成長的養分。<br>同時，也用我們的眼睛，守護孩子們的冒險旅程。</p>
-				<div class="footLogo"><?php include 'dist/images/logo.svg'; ?></div>
+				<div class="footLogo"><?php include IMG_PATH.'logo.svg'; ?></div>
 			</div>
 		</section>
 	</div>
@@ -278,7 +275,7 @@
 // -------------------------------
 // Footer
 // -------------------------------
-  include_once 'dist/inc/Footer.php';
+  include_once INC_PATH.'footer.php';
 ?>
 
 
@@ -286,7 +283,7 @@
 // -------------------------------
 // Script in the FOOT
 // -------------------------------
-  include_once 'dist/inc/ScriptFOOT.php';
+  include_once INC_PATH.'scriptfoot.php';
 ?>
 <script>
 var bannerLiLen = $("#carousel .slides li").length;
@@ -333,7 +330,7 @@ $(window).load(function() {
 // -------------------------------
 // google analytics
 // -------------------------------
-  include_once 'dist/inc/ga.php';
+  include_once INC_PATH.'ga.php';
 ?>
 
 </body>
