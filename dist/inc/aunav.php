@@ -1,18 +1,19 @@
-<?php 
+<?php
 
 
 /**
-* 
+*
 */
 class PageUrlAu {
 	public $webPageBuild    = "javascript: alert('網頁建置中，敬請稍待!');";
 	public $indexPage       = "index.php";
 	public $about   = "about.php";
+	public $books   = "books_home.php";
 
 
 }
 /**
-* 
+*
 */
 class navAu extends PageUrlAu {
 
@@ -21,6 +22,7 @@ class navAu extends PageUrlAu {
 		$Nav = array(
 						'首頁'        => $this->indexPage,
 						'關於四也'    => $this->about,
+						'四也全書'    => $this->books,
 						);
 		$NavLen = 0;
 		$NavLen ++;
@@ -75,7 +77,6 @@ function webPageUrlAu($url){
 	$PageUrlAu = new PageUrlAu();
 	echo $PageUrlAu->{$url};
 }
-
 
 
  ?>

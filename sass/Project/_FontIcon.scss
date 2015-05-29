@@ -61,10 +61,10 @@
 		color: #f16e00;
 		font-size: 1.3em;
 	}
-	&-Gr {
+	&-gr {
 		color: #a4a4a4;
 	}
-	&-Gr1 {
+	&-gr1 {
 		color: $Grey_color1;
 	}
 	&-pur {
@@ -93,7 +93,7 @@
 }
 a {
 	&.txt {
-		&-Gr1 {
+		&-gr1 {
 			&:hover {
 				text-decoration: underline;
 			}
@@ -154,6 +154,31 @@ button.icon {
 			@include wh($w, 21);
 			@include bg-i($x, 0);
 		}
+	}
+	&-asideHeader {
+		.asideMod__age & {
+			@include wh(25, 22);
+			@include bg-i(-161, -1);
+		}
+		.asideMod__cate & {
+			@include wh(29, 23);
+			@include bg-i(-187, 0);
+		}
+	}
+	&-xls {
+		@include wh(27, 33);
+		@include bg-i(-161, -29);
+	}
+	&-pdf {
+		@include wh(26, 34);
+		@include bg-i(-189, -29);
+	}
+	.file_download & {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include translate(-50%, -50%);
 	}
 
 }//.icon

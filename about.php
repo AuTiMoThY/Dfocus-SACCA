@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include_once 'config.php';
 	include_once INC_PATH.'headleader.php';
 	require_once INC_PATH.'aunav.php';
@@ -51,7 +51,6 @@
 		</article>
 	</div><!-- /.wrapper  END  !! -->
 </section>
-
 
 <section id="aboutRow2" class="wall-bar">
 	<div class="wrapper">
@@ -184,7 +183,7 @@ $(function() {
 	var scene1 = new ScrollMagic.Scene({
 		triggerElement: '#bannerTrigger',
 		offset: 0
-		// duration: 
+		// duration:
 	})
 	.setClassToggle('body', 'bannerAction-active')
 	.setTween(bannerAction)

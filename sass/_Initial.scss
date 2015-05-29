@@ -58,6 +58,9 @@ body {
 	@include col-4;
 }
 
+.gt {
+	margin: 0 1.2em;
+}
 
 
 %head {
@@ -107,4 +110,13 @@ dl dd{margin-bottom:0.75em;}
 }
 .tri {
 	display: inline-block;
+}
+
+.block_link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: block;
+	@include wh2;
 }

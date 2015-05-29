@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.books_page {
+	#bannerSlider {
+		.flex-control-nav {
+			width: 200px;
+		}
+
+		.flex-control-paging a {
+			@include rotate(0deg);
+			@include circle(20px);
+			color: color($colors, gr, 1);
+			font-weight: bold;
+			font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+			text-indent: 0;
+			line-height: 20px;
+			&.flex-active, &:hover {
+				color: #fff;
+			}
+		}
+	}
+}

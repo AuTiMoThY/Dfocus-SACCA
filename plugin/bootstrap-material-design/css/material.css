@@ -2552,9 +2552,9 @@ Then, run this script to get the list.
 .mdi-toggle-star:before {
   content: "\e8f5";
 }
-body {
+/*body {
   background-color: #eeeeee;
-}
+}*/
 body.inverse {
   background: #333333;
 }

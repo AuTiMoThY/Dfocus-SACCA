@@ -9,7 +9,7 @@
 				<ul class="cf">
 				<?php //headerNavAu(); ?>
 					<li class="js-navItem1"><a href="<?php webPageUrlAu('about'); ?>">關於四也‧快樂</a></li>
-					<li class="js-navItem2"><a href="<?php webPageUrlAu('webPageBuild'); ?>">買好書</a></li>
+					<li class="js-navItem2"><a href="<?php webPageUrlAu('books'); ?>">買好書</a></li>
 					<li class="js-navItem3"><a href="<?php webPageUrlAu('webPageBuild'); ?>">合作相關</a></li>
 				</ul>
 			</nav>
@@ -112,11 +112,11 @@
 		<div class="wrapper">
 			<nav>
 				<ul class="cf">
-					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">四也全書</a></li>
-					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">教學資源分享</a></li>
-					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">臺灣歷史記憶箱</a></li>
-					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">最新訊息</a></li>
-					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">活動紀錄報導</a></li>
+					<li class="js-subNavItem1"><a href="<?php webPageUrlAu('books'); ?>">四也全書</a></li>
+					<li class="js-subNavItem2"><a href="<?php webPageUrlAu('webPageBuild'); ?>">教學資源分享</a></li>
+					<li class="js-subNavItem3"><a href="<?php webPageUrlAu('webPageBuild'); ?>">臺灣歷史記憶箱</a></li>
+					<li class="js-subNavItem4"><a href="<?php webPageUrlAu('webPageBuild'); ?>">最新訊息</a></li>
+					<li class="js-subNavItem5"><a href="<?php webPageUrlAu('webPageBuild'); ?>">活動紀錄報導</a></li>
 				</ul>
 			</nav>
 		</div>

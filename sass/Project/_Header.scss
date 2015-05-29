@@ -54,6 +54,12 @@ header {
 					display: none;
 				}
 			}
+			&.active {
+				a {
+					color: #b5b5b6;
+					// text-shadow: 1px 1px 1px rgba(#fff, 0.6);
+				}
+			}
 		}
 		a {
 			padding: 0 1.5em;
@@ -61,7 +67,7 @@ header {
 			letter-spacing: 1px;
 			transition: all 0.3s ease-in-out;
 			&:hover {
-				color: $normal_color1;
+				color: #b5b5b6;
 			}
 		}
 	}

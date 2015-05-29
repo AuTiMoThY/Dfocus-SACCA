@@ -1,6 +1,119 @@
 @charset "UTF-8";
 
+
+.aside_group {
+	
+}
+.asideMod, .asideMod ul, .asideMod li, .asideMod li a {
+	width: 100%;
+}
+
+
 .asideMod {
 	@include margin-trailer(0.8);
 	position: relative;
+	li {
+		position: relative;
+		float: none;
+		padding: 0 1em;
+		overflow: hidden;
+		@include transition(all 0.5s ease(in-out-quad));
+		a {
+			position: relative;
+			z-index: 10;
+			display: block;
+			border-top: 1px dotted #b2b2b2;
+			color: color($colors, gr, 1);
+			@include adjFontSize(15px, 1.5);
+			text-align: center;
+			@include transition(all 0.3s ease-in-out);
+		}
+		&:first-of-type {
+			a { border-top: none;}
+		}
+		&:before {
+			@include psudoClass;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: -100%;
+			@include wh(50%, 100%);
+			@include transition(all 0.3s ease(in-out-back));
+		}
+		&:after {
+			@include psudoClass;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			right: -100%;
+			@include wh(50%, 100%);
+			@include transition(all 0.3s ease(in-out-back));
+		}
+		&:hover, .active {
+			// @include bg(#9c000e);
+			&:before {
+				left: 0;
+			}
+			&:after {
+				right: 0;
+			}
+			a {
+				color: #fff;
+				font-weight: bold;
+			}
+		}
+	}
+	&-header {
+		position: relative;
+		height: 40px;
+		@include background-image(linear-gradient(#fbfbfb, #bfbebe));
+		text-align: center;
+		&:before {
+			@include psudoClass;
+			position: absolute;
+			top: -2px;
+			left: 0;
+			@include wh(100%, 2px);
+			.asideMod__age & {
+				@include bg(color($colors, nor, 2));
+			}
+			.asideMod__cate & {
+				@include bg(color($colors, nor, 1));
+			}
+		}
+		.icon {
+
+		}
+	}
+	&-block {
+		padding: 0.6em 0 0.3em;
+		border: 1px solid #b4b3b3;
+	}
+	&-heading {
+		margin: 0;
+		line-height: 40px;
+	}
 }//.asideMod
+
+.asideMod__age {
+	li {
+		&:before, &:after {
+			@include bg(#9c000e);
+		}
+		&:hover {
+			@include bg(rgba(#9c000e, 0.5));
+		}
+	}
+}
+.asideMod__cate {
+	li {
+		&:before, &:after {
+			@include bg(#12377a);
+		}
+		&:hover {
+			@include bg(rgba(#12377a, 0.5));
+		}
+	}
+}
+
+
