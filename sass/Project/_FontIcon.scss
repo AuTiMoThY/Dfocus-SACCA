@@ -3,8 +3,6 @@
 .txt {
 	&-r {
 		color: #f20101;
-		font-size: 1.3em;
-		font-weight: bolder;
 	}
 	&-r1 {
 		color: #9c0000;
@@ -14,6 +12,9 @@
 	}
 	&-r3 {
 		color: #bd000f;
+	}
+	&-r4 {
+		color: #9c000e;
 	}
 	&-b {
 		color: $normal_color;
@@ -65,7 +66,10 @@
 		color: #a4a4a4;
 	}
 	&-gr1 {
-		color: $Grey_color1;
+		color: color($colors, gr, 1);
+	}
+	&-gr2 {
+		color: #898989;
 	}
 	&-pur {
 		color: #a60c4e;
@@ -87,10 +91,19 @@
 	&-q {
 		color: #1cacab;
 	}
+	&-spec {
+		font-size: em(21);
+		font-weight: bold;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+	&-fz13 {
+		font-size: em(13);
+	}
+	&-ffv {
+		font-family: Verdana, Geneva, sans-serif;
+	}
 }
-.tdlt {
-	text-decoration: line-through;
-}
+
 a {
 	&.txt {
 		&-gr1 {
@@ -108,6 +121,87 @@ a {
 				text-decoration: underline;
 			}
 		}
+	}
+}
+
+.txtImg-title {
+	&-signup {
+		@include wh2(120 28);
+		@include bg-t(-170, -67);
+		margin: auto;
+	}
+	&-set1 {
+		@include wh2(92 21);
+		@include bg-t(-170, -96);
+	}
+	&-set2 {
+		@include wh2(93 21);
+		@include bg-t(-170, -118);
+	}
+	&-step3 {
+		@include wh2(335 21);
+		@include bg-t(-291, -67);
+	}
+	&-confirm {
+		@include wh2(140 21);
+		@include bg-t(-263, -96);
+	}
+	&-member {
+		@include wh2(120 28);
+		@include bg-t(-170, -140);
+		margin: auto;
+	}
+	&-join {
+		@include wh2(230 20);
+		@include bg-t(-264, -118);
+	}
+	&-login {
+		@include wh2(81 20);
+		@include bg-t(-404, -96);
+	}
+	&-edit {
+		@include wh2(181 28);
+		@include bg-t(-291, -140);
+		margin: 0 auto 2em;
+	}
+	&-dataEdit {
+		@include wh2(93 21);
+		@include bg-t(-170, -169);
+	}
+	&-pwEdit {
+		@include wh2(92 21);
+		@include bg-t(-264, -169);
+	}
+	&-forget {
+		@include wh2(120 28);
+		@include bg-t(-473, -140);
+		margin: 0 auto 2em;
+	}
+	&-cart {
+		@include wh2(90 28);
+		@include bg-t(-594, -140);
+		margin: auto;
+	}
+	&-member_inf {
+		@include wh2(93 21);
+		@include bg-t(-627, -67);
+	}
+	&-recipient_inf {
+		@include wh2(116 21);
+		@include bg-t(-721, -67);
+	}
+	&-invoice_inf {
+		@include wh2(93 21);
+		@include bg-t(-838, -67);
+	}
+	&-payment {
+		@include wh2(92 21);
+		@include bg-t(-357, -169);
+		margin-right: 2.8em;
+	}
+	&-payment_inf {
+		@include wh2(93 21);
+		@include bg-t(-450, -169);
 	}
 }
 
@@ -143,6 +237,9 @@ a {
 button.icon {
 	margin: 0;
 	border: none;
+}
+i.icon {
+	@include ib;
 }
 .icon {
 	@each $sacca-foot, $w, $x in
@@ -180,5 +277,136 @@ button.icon {
 		left: 50%;
 		@include translate(-50%, -50%);
 	}
+	&-cart {
+		@include wh2(28 19);
+		@include bg-i(-218, 0);
+	}
+	&-tag {
+		.r1, .p1 {
+			fill: color($colors, gr, 1);
+		}
+	}
+	&-book {
+		@for $i from 1 through 7 {
+			.p#{$i} {
+				fill: #12377a;
+			}
+		}
+	}
+	&-join {
+		&-1 {
+			@include wh2(38 42);
+			@include bg-i(-219, -106);
+		}
+		&-2 {
+			@include wh2(38 37);
+			@include bg-i(-219, -149);
+		}
+		&-3 {
+			@include wh2(38 40);
+			@include bg-i(-219, -187);
+		}
+	}
+	&-triL {
+		display: inline-block;
+		@include triangle(left, #646464, 6px);
+		margin-right: 5px;
+	}
+	&-payment1 {
+		@include wh2(31 41);
+		@include bg-i(-260, -106);
+		margin: 0 0.5em 0 0.3em;
+	}
+	&-payment2 {
+		@include wh2(35 31);
+		@include bg-i(-258, -148);
+		margin: 0 0.5em 0 0.3em;
+	}
 
 }//.icon
+
+.svg_icon_writing {
+	@include wh2(69 66);
+	fill: #fff;
+	.biz_page & {
+		fill: #fff;
+		@include absolute($t:0, $r:0, $b:0, $l:0);
+		margin: auto;
+	}
+}
+.svg_icon_cart {
+	@include wh2(72 65);
+	fill: #fff;
+}
+.svg_icon_tag {
+	fill: color($colors, gr, 1);
+	@include wh2(24);
+}
+.svg_icon_mail {
+	@include wh2(19 13);
+	fill: color($colors, nor, 8);
+}
+.svg_icon_phone {
+	@include wh2(18 21);
+	fill: color($colors, nor, 8);
+}
+.svg_icon_building {
+	@include wh2(23 20);
+	fill: color($colors, nor, 8);
+}
+.svg_icon_hrtime {
+	@include wh2(26 20);
+	fill: color($colors, nor, 8);
+}
+.svg_icon_tax {
+	@include wh2(24 16);
+	fill: color($colors, nor, 8);
+}
+.svg_icon_cart {
+	.biz_page & {
+		fill: #fff;
+		@include absolute($t:0, $r:0, $b:0, $l:0);
+		margin: auto;
+	}
+}
+.svg_icon_people {}
+.svg_icon_tag {
+	.history-tag & {
+		@include wh2(16 15);
+		fill: color($colors, nor, 8);
+	}
+	.filter-label & {
+		fill: color($colors, gr, 1);
+	}
+	.filter_history & {
+		@include wh2(16);
+	}
+}
+.svg_icon_people {
+	@include wh2(15 16);
+	fill: color($colors, nor, 8);
+	.resource_page & {
+		vertical-align: -0.4ex;
+	}
+}
+#shape-cart {
+	.biz_page & {
+		.bg1, .bg2, .bg3 {
+			fill: #9fa0a0;
+		}
+	}
+}
+
+.svg_icon_magnifier {
+	.activity_page & {
+		@include wh2(47);
+		fill: #c9caca;
+	}
+}
+.svg_icon_download {
+	.resource_page & {
+		@include wh2(18 21);
+		vertical-align: -0.9ex;
+		fill: #595757;
+	}
+}

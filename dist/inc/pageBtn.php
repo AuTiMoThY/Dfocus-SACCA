@@ -24,4 +24,4 @@
 			</select>頁
 		</li>
 	</ul>
-</div>
+</div><!-- /.pages_btn  END  !! -->

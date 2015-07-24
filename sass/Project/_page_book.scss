@@ -20,3 +20,15 @@
 		}
 	}
 }
+
+.book_cnt_page {
+	section.row {
+		@include rhythm-padding(1.5, 1.5);
+		background-color: white;
+	}
+	.add_to_cart {
+		margin-top: 1.2em;
+	}
+}
+
+

@@ -2852,12 +2852,12 @@ body .jumbotron-material-blue-grey,
   text-transform: uppercase;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.84);
-  transition: background-color 0.2s ease, box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-image 0.2s ease, background-color 0.2s ease, box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   outline: none !important;
 }
-.btn:hover:not(.btn-link):not(.btn-flat):not(.btn-fab) {
+/*.btn:hover:not(.btn-link):not(.btn-flat):not(.btn-fab) {
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-}
+}*/
 .btn:active:not(.btn-link):not(.btn-flat):not(.btn-fab) {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
@@ -2989,7 +2989,7 @@ body .jumbotron-material-blue-grey,
   color: rgba(255, 255, 255, 0.84);
 }
 .btn-material-pink:not(.btn-link):not(.btn-flat) {
-  background-color: #e91e63;
+  background-color: #9c000e;
   color: rgba(255, 255, 255, 0.84);
 }
 .btn-material-purple:not(.btn-link):not(.btn-flat) {
@@ -3092,7 +3092,7 @@ body .jumbotron-material-blue-grey,
   background-color: #f55549;
 }
 .btn-material-pink:hover:not(.btn-link):not(.btn-flat) {
-  background-color: #eb3170;
+  background-color: #B21F2C;
 }
 .btn-material-purple:hover:not(.btn-link):not(.btn-flat) {
   background-color: #ab2bc1;
@@ -3177,7 +3177,7 @@ body .jumbotron-material-blue-grey,
   background-color: #f65e53;
 }
 .btn-material-pink:active:not(.btn-link):not(.btn-flat) {
-  background-color: #ec3a76;
+  background-color: #9c000e;
 }
 .btn-material-purple:active:not(.btn-link):not(.btn-flat) {
   background-color: #b22dc9;

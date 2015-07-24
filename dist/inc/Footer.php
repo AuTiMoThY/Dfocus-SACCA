@@ -5,22 +5,22 @@
 			<div class="sitemap-col col">
 				<div class="pattern"></div>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">關於公司--快樂文創</a></li>
-					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">四也出版的故事</a></li>
-					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">公司團隊(顧問群)</a></li>
-					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">發行人的話</a></li>
+					<li class="title"><a href="about.php">關於公司--快樂文創</a></li>
+					<li><a href="about.php#aboutRow1">四也出版的故事</a></li>
+					<li><a href="about.php#saccaGroup">公司團隊(顧問群)</a></li>
+					<li><a href="about.php">發行人的話</a></li>
 				</ul>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">最新訊息</a></li>
+					<li class="title"><a href="<?php webPageUrlAu('news'); ?>">最新訊息</a></li>
 				</ul>
 			</div>
 			<div class="sitemap-col col">
 				<div class="pattern"></div>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">教學資源分享</a></li>
+					<li class="title"><a href="<?php webPageUrlAu('resource'); ?>">教學資源分享</a></li>
 				</ul>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">合作相關</a></li>
+					<li class="title"><a href="<?php webPageUrlAu('business'); ?>">合作相關</a></li>
 					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">作家有約</a></li>
 					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">實地走讀</a></li>
 					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">文學營</a></li>
@@ -29,22 +29,28 @@
 			<div class="sitemap-col col">
 				<div class="pattern"></div>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">四也書城</a></li>
+					<li class="title"><a href="<?php webPageUrlAu('books_home'); ?>">四也書城</a></li>
+					<li class=""><a href="<?php webPageUrlAu('cart_1'); ?>">購物車</a></li>
 				</ul>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">會員中心</a></li>
+					<!-- 未登入時顯示  ↓↓↓ -->
+					<li class="title"><a href="login.php">會員中心</a></li>
+					<!-- 已登入時顯示  ↓↓↓ -->
+					<li class="title"><a href="member.php">會員中心</a></li>
+
+<!-- 					<li class="title"><a href="member.php">會員中心</a></li>
+					<li class="title"><a href="member.php">會員中心</a></li> -->
 				</ul>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">購物車</a></li>
 				</ul>
 			</div>
 			<div class="sitemap-col col">
 				<div class="pattern"></div>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">臺灣歷史記憶箱</a></li>
+					<li class="title"><a href="<?php webPageUrlAu('history'); ?>">臺灣歷史記憶箱</a></li>
 				</ul>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('webPageBuild'); ?>">活動紀錄報導</a></li>
+					<li class="title"><a href="<?php webPageUrlAu('activity'); ?>">活動紀錄報導</a></li>
 				</ul>
 			</div>
 		</div><!-- .sitemap-wrap  END  !! -->

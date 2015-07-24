@@ -5,10 +5,10 @@
 			</header>
 			<div class="asideMod-block">
 				<ul>
-					<li><a href="">國小中低年級</a></li>
-					<li><a href="">國小中年級</a></li>
-					<li><a href="">國小高年級</a></li>
-					<li><a href="">國高中以上</a></li>
+					<li id="ageItem1"><a href="books_list.php">國小中低年級</a></li>
+					<li id="ageItem2"><a href="books_list.php">國小中年級</a></li>
+					<li id="ageItem3"><a href="books_list.php">國小高年級</a></li>
+					<li id="ageItem4"><a href="books_list.php">國高中以上</a></li>
 				</ul>
 			</div><!-- /.asideMod-block  END  !! -->
 		</div><!-- /.asideMod__age  END  !! -->
@@ -20,17 +20,17 @@
 			</header>
 			<div class="asideMod-block">
 				<ul>
-					<li><a href="">童話搜神記</a></li>
-					<li><a href="">慶典童話</a></li>
-					<li><a href="">動物謎小說</a></li>
-					<li><a href="">童話奇異國</a></li>
-					<li><a href="">許榮哲成語學園</a></li>
-					<li><a href="">許榮哲經典學園</a></li>
-					<li><a href="">成語一千零一夜</a></li>
-					<li><a href="">福爾摩沙冒險小說</a></li>
-					<li><a href="">神話夢小說</a></li>
-					<li><a href="">心靈教育</a></li>
-					<li><a href="">親師教育</a></li>
+					<li id="cateItem1"><a href="books_list.php">童話搜神記</a></li>
+					<li id="cateItem2"><a href="books_list.php">慶典童話</a></li>
+					<li id="cateItem3"><a href="books_list.php">動物謎小說</a></li>
+					<li id="cateItem4"><a href="books_list.php">童話奇異國</a></li>
+					<li id="cateItem5"><a href="books_list.php">許榮哲成語學園</a></li>
+					<li id="cateItem6"><a href="books_list.php">許榮哲經典學園</a></li>
+					<li id="cateItem7"><a href="books_list.php">成語一千零一夜</a></li>
+					<li id="cateItem8"><a href="books_list.php">福爾摩沙冒險小說</a></li>
+					<li id="cateItem9"><a href="books_list.php">神話夢小說</a></li>
+					<li id="cateItem10"><a href="books_list.php">心靈教育</a></li>
+					<li id="cateItem11"><a href="books_list.php">親師教育</a></li>
 				</ul>
 			</div><!-- /.asideMod-block  END  !! -->
 		</div><!-- /.asideMod__cate  END  !! -->
@@ -57,7 +57,7 @@
 			<div class="blockMod-block">
 				<ul class="book-list cf">
 					<li class="book-list-item">
-						<a href="" class="block_link"></a>
+						<a href="books_cnt.php" class="block_link"></a>
 						<figure>
 							<span class="order_number"></span>
 							<div class="book-pic pic"><img src="<?php path_au('temp'); ?>tem_book1-205_290.jpg" alt=""></div>
@@ -79,7 +79,7 @@
 						</figure>
 					</li>
 					<li class="book-list-item">
-						<a href="" class="block_link"></a>
+						<a href="books_cnt.php" class="block_link"></a>
 						<figure>
 							<span class="order_number"></span>
 							<div class="book-pic pic"><img src="<?php path_au('temp'); ?>tem_book2-205_290.jpg" alt=""></div>
@@ -101,7 +101,7 @@
 						</figure>
 					</li>
 					<li class="book-list-item">
-						<a href="" class="block_link"></a>
+						<a href="books_cnt.php" class="block_link"></a>
 						<figure>
 							<span class="order_number"></span>
 							<div class="book-pic pic"><img src="<?php path_au('temp'); ?>tem_book1-85.jpg" alt=""></div>
@@ -125,3 +125,6 @@
 				</ul>
 			</div><!-- /.blockMod-block  END  !! -->
 		</div><!-- /.blockMod__hot  END  !! -->
+		<div class="blockMod blockMod__fb">
+			<img src="<?php path_au('temp'); ?>FB.jpg" alt="">
+		</div>

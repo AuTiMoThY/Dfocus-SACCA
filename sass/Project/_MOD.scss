@@ -1,12 +1,29 @@
 @charset "UTF-8";
 
 .mod {
-	
+	.title1 {
+		color: color($colors, gr, 1);
+		font-size: 2em;
+		line-height: 35px;
+		font-family: $normal_font;
+	}
+	.title2 {
+		color: $Grey_color6;
+		font-size: 2em;
+		font-family: 'Tangerine', cursive;
+		font-weight: normal;
+		// text-transform: uppercase;
+		text-transform: capitalize;
+		letter-spacing: 1px;
+	}
 }//.mod
 
 
 .blockMod {
 	@include bg('bg-gray.jpg', 0, 0, repeat);
+	&.blockMod__hot {
+		margin-bottom: 1.2em;
+	}
 	&-header {
 		@include wh2;
 		padding: 1em 0;
@@ -25,11 +42,29 @@
 				@include bg-i(-250, -71);
 			}
 		}
-		.blockMod__latest & {
+		.blockMod__booklist & {
 			border-bottom: 1px dotted #000;
 		}
-		.blockMod__awarded & {
-			border-bottom: 1px dotted #000;
+		&.blockMod__booklistpage-header {
+			position: relative;
+			&::before {
+				@include psudoClass;
+				@include absolute($b: 0, $l: 2em);
+				@include wh2(175 52);
+				@include bg-i(-520, 0);
+			}
+			&::after {
+				@include psudoClass;
+				@include absolute($b: 0, $r: 2em);
+				@include wh2(172 36);
+				@include bg-i(-520, -53);
+			}
+			h2 {
+				@include wh2();
+				text-align: center;
+				font-family: $normal_font2;
+				font-weight: bold;
+			}
 		}
 	}
 	&-block {
@@ -40,12 +75,7 @@
 			@include bg(rgba(#fff, 0.6));
 			box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
 			@include transition(all 0.3s ease-out);
-			.blockMod__hot & {
-				width: 90%;
-				margin: 0 auto 1em;
-				float: none;
-			}
-			.blockMod__latest & {
+			.blockMod__booklist & {
 				width: 32%;
 				height: 350px;
 				margin-left: 2%;
@@ -55,10 +85,22 @@
 					margin-left: 0;
 				}
 			}
+			.blockMod__hot & {
+				width: 90%;
+				margin: 0 auto 1em;
+				float: none;
+			}
+			.blockMod__latest & {
+
+			}
 			.blockMod__awarded & {
 				width: 50%;
+				height: auto;
 				border-bottom: 1px dotted #000;
 				box-shadow: none;
+				margin-left: 0;
+				margin-bottom: 1.2em;
+				padding: 0 1em 1.2em 0;
 				&::before {
 					@include psudoClass;
 					@include absolute($t: 0, $l: 0);
@@ -72,11 +114,7 @@
 				}
 			}
 		}
-		.blockMod__latest & {
-			padding-top: 1em;
-			@include bg(#fff);
-		}
-		.blockMod__awarded & {
+		.blockMod__booklist & {
 			padding-top: 1em;
 			@include bg(#fff);
 		}
@@ -90,9 +128,28 @@
 		>>	book
 \*========================================================================*/
 .book {
+@include atRoot(){
+/* >>> book cnt page layout **************************************************/
+	&-header {
+		padding-left: 1em;
+		padding-right: 1em;
+		.col-2 {
+			&.book-pic-block {
+				border: 1px solid color($colors, gr, 5);
+			}
+		}
+		&-cnt {
+			padding-left: 1.8em;
+		}
+	}
+	&-body {}
+	&-preview {}
+};
 	&-banner {
 		width: 100%;
 	}
+@include atRoot(){
+/* >>> book-list **************************************************/
 	&-list {
 		&-item {
 			&:hover {
@@ -102,24 +159,60 @@
 					@include scale(1.05);
 				}
 			}
+			.blockMod__awarded & {
+				&:hover {
+					background-color: transparent;;
+				}
+			}
+			.add_to_cart {
+				margin-top: 1em;
+			}
 		}
 	}
+};
+@include atRoot(){
+/* >>> book-name **************************************************/
 	&-name {
 		font-size: em(15);
 		text-align: center;
+		line-height: 1.5;
+		.blockMod__booklist & {
+			height: 49px;
+			padding-bottom: 0.8em;
+			border-bottom: 1px dotted #000;
+		}
 		.blockMod__hot & {
 			width: 100%;
 			padding-bottom: 0.8em;
 			border-bottom: 1px dotted #000;
 		}
 		.blockMod__latest & {
-			height: 49px;
-			padding-bottom: 0.8em;
-			border-bottom: 1px dotted #000;
+
 		}
 		.blockMod__awarded & {
 			text-align: left;
+			height: 44px;
+			padding-bottom: 0;
+			margin-bottom: 1.5em;
+			border-bottom: none;
 		}
+		.book-header-cnt & {
+			margin-bottom: 1.2em;
+			height: auto;
+			@include adjFontSize(19px, 1.2);
+			font-family: $normal_font;
+		}
+		.cart-block & {
+			text-align: left;
+			font-weight: bold;
+		}
+	}
+};
+@include atRoot(){
+/* >>> book-pic **************************************************/
+	%bookpicstyle1 {
+		@include wh2(150 212);
+		margin: 0 auto 1.2em;
 	}
 	&-pic {
 		margin: auto;
@@ -129,34 +222,259 @@
 			max-width: none;
 			width: 100%;
 		}
+		.blockMod__booklist & {
+			// @include wh2(150 212);
+			// margin: 0 auto 1.2em;
+		}
 		.blockMod__hot & {
 			@include wh2(115 163);
 			margin: 0 auto 1.2em;
 		}
 		.blockMod__latest & {
-			@include wh2(150 212);
-			margin: 0 auto 1.2em;
+			@extend %bookpicstyle1;
 		}
 		.blockMod__awarded & {
 			@include wh2(115 163);
 			margin: 0 2em;
 		}
+		.blockMod__booklistpage & {
+			@extend %bookpicstyle1;
+		}
+		.book_cnt_page & {
+			width: 205px;
+		}
+		.cart-block & {
+			display: table;
+			width: auto;
+		}
+		&-block {
+			padding: 4em;
+			.cart-block & {
+				@include wh2(125);
+				border: 1px solid #cccccc;
+				padding: 0;
+				img {
+					width: auto;
+					height: 100%;
+				}
+			}
+		}
 	}
+};
+@include atRoot(){
+/* >>> book-auth 作者 **************************************************/
 	&-auth {
 		color: #000;
 		font-size: em(13);
 		line-height: 30px;
 		letter-spacing: 1px;
+		.book_cnt_page & {
+			@extend %book_cnt_page_font;
+		}
 	}
+};
+@include atRoot(){
+/* >>> book-price 特價 或 價格 **************************************************/
 	&-price {
 		color: #000;
 		font-size: em(13);
 		line-height: 30px;
 		letter-spacing: 1px;
+		.book_cnt_page & {
+			color: #9fa0a0;
+			@extend %book_cnt_page_font;
+		}
+		.cart-block & {
+			font-size: em(15);
+			.txt-r2 {
+				font-weight: bold;
+			}
+		}
+		&-group {
+			display: table;
+			margin-top: 1.6em;
+			.book-price0, .book-price {
+				display: table-cell;
+			}
+			.book-price0 {
+				padding-right: 1.2em;
+			}
+		}
+	}
+	&-price0 {
+		text-decoration: line-through;
+		color: #000;
+		line-height: 30px;
+		letter-spacing: 1px;
+	}
+};
+
+
+
+@include atRoot(){
+/* >>> book-painter 繪者 **************************************************/
+	&-painter {
+		.book_cnt_page & {
+			@extend %book_cnt_page_font;
+		}
+	}
+};
+
+@include atRoot(){
+/* >>> book-press 出版社 **************************************************/
+	&-press {
+		.book_cnt_page & {
+			@extend %book_cnt_page_font;
+		}
+	}
+};
+
+@include atRoot(){
+/* >>> book-pubDate 出版日期 **************************************************/
+	&-pubDate {
+		.book_cnt_page & {
+			color: #9fa0a0;
+			@extend %book_cnt_page_font;
+		}
+	}
+};
+
+@include atRoot(){
+/* >>> book-lang 語言 **************************************************/
+	&-lang {
+		.book_cnt_page & {
+			color: #9fa0a0;
+			@extend %book_cnt_page_font;
+		}
+	}
+};
+
+@include atRoot(){
+/* >>> book-price0 定價 **************************************************/
+	&-price0 {
+		.book_cnt_page & {
+			color: #9fa0a0;
+			@extend %book_cnt_page_font;
+		}
 	}
 
-}
 
+	&-preview {
+		&-block {
+			height: 1800px;
+			padding: 2em;
+			border: 3px solid #e3e2e2;
+			overflow-y: scroll;
+		}
+	}
+};
+
+	@include atRoot{
+/*========================================================================*\
+		>>	book-inf-tabs
+\*========================================================================*/
+	&-inf {
+		&-tabs {
+			height: 40px;
+			@include background-image(linear-gradient(#b51834, #9b041f));
+			position: relative;
+			&:before {
+				@include psudoClass;
+				@include wh;
+				@include bg('line2.png', 0, 0, repeat);
+				position: absolute;
+				top: 0;
+			}
+			li {
+				border-right: 1px solid #fff;
+				margin-top: 15px;
+				&:first-of-type {
+					margin-left: 0.5em;
+				}
+			}
+			a {
+				// display: inline-block;
+				padding: 0 0.8em;
+			}
+		}//.book-inf-tabs
+		$tabsLiH: 19px;
+		&-block {
+			border: 1px solid $Grey_color7;
+			ul.tabs {
+				li {
+					height: $tabsLiH;
+					&:hover, &.active {
+						&:after {
+							@include psudoClass;
+							@include wh(105%, 35px);
+							@include bg(#fff);
+							border-radius: 5px;
+							position: absolute;
+							top: -3px;
+							left: -1px;
+							z-index: -1;
+						}
+						a {
+							&:after {
+								@include psudoClass;
+								@include wh(shadow2, png);
+								@include bg('shadow2.png');
+								position: absolute;
+								left: 0;
+								right: 0;
+								margin: auto;
+								bottom: -6px;
+							}
+						}
+					}
+				}
+				a {
+					min-width: 73px;
+					line-height: $tabsLiH;
+					position: relative;
+					display: inline-block;
+				}
+			}
+		}//.book-inf-block
+		&-container {
+			// @include bg(#999);
+			.mod {
+				&-tab_cnt {
+					h1 {
+						border-bottom: 1px solid #e3e2e2;
+						padding-bottom: 0;
+						position: relative;
+						@include margin-trailer;
+						&:after {
+							@include psudoClass;
+							@include wh(100%, 3px);
+							@include bg(lighten(#e3e2e2, 5%));
+							position: absolute;
+							bottom: -4px;
+						}
+					}
+					.icon {
+						height: 24px;
+					}
+					.title1 {
+						@include adjust-font-size-to(23px);
+					}
+					.title2 {
+						font-size: 2em;
+					}
+					span {
+						height: 28px;
+					}
+				}
+			}//.book-inf-container  .mod
+		}//.book-inf-container
+	}
+	};//.book-inf-tabs  atRoot
+
+}
+%book_cnt_page_font {
+	@include adjFontSize(15px, 1.2);
+}
 
 
 

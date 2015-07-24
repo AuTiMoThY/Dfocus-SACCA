@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.resource {
+	&-list {}
+	&-item {
+		width: 100%;
+		margin-bottom: 1em;
+		padding: 0 1em;
+		@include bg(#efefef);
+		@include transition(all 0.3s $easeInOutCubic);
+		.txt-gr1, .txt-r4 {
+			line-height: 38px;
+		}
+		&:hover {
+			@include bg(#595757);
+			.txt-gr1, .txt-r4 {
+				color: #fff;
+			}
+			.icon {
+				fill: #fff;
+			}
+		}
+	}
+	&-title {
+		font-size: em(18);
+	}
+	&-people {
+		font-size: em(13);
+	}
+	&-download {
+		font-size: em(13);
+		a:hover {
+			.icon {
+				fill: #ffde00;
+			}
+			.txt-gr1 {
+				color: #ffde00;
+			}
+		}
+	}
+}

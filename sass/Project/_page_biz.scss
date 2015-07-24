@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.biz_page {
+	.icon_bg {
+		position: relative;
+		@include circle(105px);
+		@include bg(#9fa0a0);
+		margin-right: 1.2em;
+		&~.biz_txt {
+			width: 85%;
+		}
+	}
+	.full_bg {
+		@include bg(#f2f2f2);
+	}
+	p {
+		@include adjFontSize(15px, 1.2);
+	}
+	li {
+		line-height: 1.8;
+		font-size: em(15);
+		letter-spacing: 1px;
+	}
+	.txt-r1 {
+
+	}
+	.ml {
+		margin-left: 2.5em;
+	}
+}
+
+.biz_form {
+	width: 800px;
+	margin: auto;
+	li {
+		width: 100%;
+		margin-bottom: 1.6em;
+		float: none;
+		line-height: 30px;
+	}
+	.frm--dfocus {
+		margin-left: 1.2em;
+		&:first-of-type {
+			margin-left: 0;
+		}
+	}
+	.frm__label {
+		width: ((0.8 / 8) * 800) * 1px;
+		font-size: em(15);
+		font-weight: bold;
+		letter-spacing: 1px;
+		line-height: 30px;
+	}
+	.frm__radio {
+		@include ib;
+		&+.frm__radio-label {
+			@include ib;
+			// width: ((0.8 / 8) * 800) * 1px;
+		}
+	}
+	.frm__radio-label {
+		color: color($colors, gr, 1);
+		font-size: em(15);
+	}
+	.frm__field {
+		width: ((4 / 8) * 800) * 1px;
+		&.input-job_title {
+			width: ((2 / 8) * 800) * 1px;
+		}
+		&.input-tel, &.input-email {
+			width: (((8 - 0.9) / 8) * 800) * 1px;
+		}
+	}
+	.frm__textarea {
+		height: 400px;
+		resize: none;
+		&.input-textarea {
+			width: (((8 - 0.9) / 8) * 800) * 1px;
+		}
+	}
+
+}

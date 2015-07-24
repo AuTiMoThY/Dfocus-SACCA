@@ -55,13 +55,13 @@ header {
 				}
 			}
 			&.active {
-				a {
+				.main_nav-item-cnt {
 					color: #b5b5b6;
 					// text-shadow: 1px 1px 1px rgba(#fff, 0.6);
 				}
 			}
 		}
-		a {
+		.main_nav-item-cnt {
 			padding: 0 1.5em;
 			@extend %nav_bar_txt;
 			letter-spacing: 1px;

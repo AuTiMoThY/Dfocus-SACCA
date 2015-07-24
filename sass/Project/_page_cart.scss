@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+$col-padding-top: 50px;
+.cart {
+	&-container {
+		position: relative;
+		padding: 3em;
+		@include bg(#efefef);
+		margin-bottom: 5em;
+	}
+	&-steps {
+		@include wh2(856 48);
+		@include bg('cartsteps.png', 0%, 0%, no-repeat);
+		margin: 2em auto;
+		&.step2 {
+			@include bg(0, -49);
+		}
+		&.step3 {
+			@include bg(0, -98);
+		}
+		&.step4 {
+			@include bg(0, -147);
+		}
+	}
+	&-form {
+		.btn-submit {
+			line-height: 30px;
+		}
+	}
+	&-block {
+		position: relative;
+		padding: 1.5em 1em;
+		margin-bottom: 1.2em;
+		border-top: 1px dotted #000;
+		border-bottom: 1px dotted #000;
+		hgroup {
+			position: relative;
+			@include wh2;
+			margin-bottom: 1.2em;
+			p {
+				@include absolute(6px, $l:106px);
+				font-size: em(13);
+			}
+		}
+		li {
+			position: relative;
+			width: 100%;
+			margin-bottom: 1em;
+			&.cart-item {
+				@include bg(#fff);
+				padding: 0.8em;
+			}
+		}
+		.col2 {
+			padding-left: 1.2em;
+		}
+		.col3 {
+			padding-top: $col-padding-top;
+			font-size: em(15);
+		}
+		.col4 {
+			padding-top: $col-padding-top;
+			font-size: em(15);
+			font-weight: bold;
+			line-height: 2;
+			text-align: right;
+		}
+		.inp-amount {
+
+		}
+		.confirm-block {
+			li {
+				// margin-bottom: 1em;
+				color: #595757;
+				@include adjFontSize(13px);
+			}
+			.frm__label {
+				width: 100px;
+			}
+		}
+		.row {
+			width: 80%;
+			min-width: 800px;
+			margin: 0 auto 2.2em;
+			border-top: 1px dotted #000;
+			padding-top: 2em;
+			&:first-of-type {
+				border-top: none;
+				padding-top: 1em;
+			}
+		}
+		.frm--dfocus {
+			display: block;
+		}
+		.frm__label {
+			width: 100px;
+			color: #595757;
+			font-size: em(13);
+		}
+		.frm__field {
+			width: 350px;
+			&.s1 {
+				width: 240px;
+				margin-right: 16px;
+			}
+			&.s2 {
+				width: 350px;
+			}
+			&.s3 {
+				width: 350px - 240 - 20;
+			}
+		}
+		.zipcode-style {
+			width: 65px;
+			box-shadow: none;
+		}
+		.county-style, .district-style {
+			width: 95px;
+		}
+		.payment_method {
+			.frm__label {
+				width: auto;
+			}
+		}
+	}
+	&-total {
+		&-block {
+			// padding: 1em;
+			margin-bottom: 1em;
+			span {
+				@include adjFontSize(15px);
+				font-weight: bold;
+			}
+			.col2 {
+				padding: 0 2em 1.2em 1em;
+				border-bottom: 1px dotted #000;
+				span {
+					@include adjFontSize(15px);
+				}
+			}
+		}
+	}
+	&-number {
+		font-family: Verdana, Geneva, sans-serif;
+	}
+	&-table {
+		width: 100%;
+		border: 1px solid #b5b5b6;
+		tr {
+			border-top: 1px solid #b5b5b6;
+			&:first-of-type {
+				border-top: none;
+			}
+			&:nth-of-type(odd) {
+				background-color: #f7f6f6;
+			}
+			&:nth-of-type(even) {
+				background-color: #fff;
+			}
+		}
+		th {
+			color: #898989;
+			@include adjFontSize(13px,1.2);
+			padding: 1em;
+			&:first-of-type {
+				padding-left: 2em;
+			}
+		}
+		td {
+			padding: 1.6em 2em;
+		}
+		.cart-number {
+			text-align: center;
+		}
+
+	}
+}
+
+.invoice_inf {
+	// min-height: 300px;
+	.inp-group {
+		position: absolute;
+		top: -6px;
+		right: 0;
+		width: 340px;
+	}
+}
+
+.payment_method {
+	hgroup {
+		.frm__label {
+			&:first-of-type {
+				margin-right: 2em;
+			}
+		}
+	}
+}
+.payment1-block {
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #b4b4b4;
+	padding: 1.8em;
+	h3 {
+		color: #595757;
+		font-weight: bold;
+		@include adjFontSize(15px);
+	}
+	p {
+		color: #595757;
+		@include adjFontSize(15px);
+		margin-bottom: 3em;
+	}
+	.txt-r1 {
+		font-weight: bold;
+	}
+	.temp {
+		width: 100%;margin-bottom: 2.2em;
+	}
+	&.inf_block {
+		border-top: 1px solid #b4b4b4;
+		h3 {
+			border-bottom: 1px dotted #000;
+		}
+	}
+}
+
+.payment-result {
+	width: 100%;
+	background-color: #fafafa;
+	line-height: 35px;
+	text-align: center;
+	color: #595757;
+	font-weight: bold;
+}
+
+.total_calc {
+
+	.total {
+		border-top: 1px dotted #000;
+		vertical-align: bottom;
+		padding-top: 1.6em;
+		.txt-fz2 {
+			font-size: em(30);
+		}
+	}
+}
+
+.inf_block {
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #b5b5b6;
+	padding: 2em;
+	&.member_inf {
+		.frm__label {
+			width: auto;
+		}
+	}
+	.frm__label {
+		width: auto;
+	}
+}
+
+/*------------------------------------------------------------------------*\
+		>>	order_wrap
+\*------------------------------------------------------------------------*/
+.order_wrap {
+	width: 100%;
+	background-color: #fff;
+	border: 3px solid #cbcbcb;
+	padding: 2em 4em;
+}
+.order_block {
+	border-top: 1px dashed #7f7f7f;
+	border-bottom: 1px dashed #7f7f7f;
+	text-align: center;
+	padding: 1.6em;
+	p {
+		color: #595757;
+		@include adjFontSize(13px, 1.2);
+	}
+	.order_number {
+		width: 410px;
+		border: 1px solid #cbcbcb;
+		@include adjFontSize(40px,2.6);
+		margin: 0.4em auto 0;
+
+	}
+}
+.order_number {
+	color: #c14948;
+	font-weight: bold;
+}

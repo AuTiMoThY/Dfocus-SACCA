@@ -5,10 +5,17 @@
 *
 */
 class PageUrlAu {
-	public $webPageBuild    = "javascript: alert('網頁建置中，敬請稍待!');";
-	public $indexPage       = "index.php";
-	public $about   = "about.php";
-	public $books   = "books_home.php";
+	public $webPageBuild = "javascript: alert('網頁建置中，敬請稍待!');";
+	public $index        = "index.php";
+	public $about        = "about.php";
+	public $books        = "books_home.php";
+	public $business     = "business.php";
+	public $history      = "history.php";
+	public $news         = "news.php";
+	public $activity     = "activity.php";
+	public $resource     = "resource.php";
+	public $member       = "member.php";
+	public $cart_1       = "cart_1.php";
 
 
 }
@@ -20,9 +27,13 @@ class navAu extends PageUrlAu {
 	function navListAu($headerOrFooter) {
 
 		$Nav = array(
-						'首頁'        => $this->indexPage,
-						'關於四也'    => $this->about,
-						'四也全書'    => $this->books,
+						// '首頁'        => $this->index,
+						// '關於四也'    => $this->about,
+'四也全書'       => $this->books,
+'教學資源分享'   => $this->resource,
+'臺灣歷史記憶箱' => $this->history,
+'最新訊息'       => $this->news,
+'活動紀錄報導'   => $this->activity
 						);
 		$NavLen = 0;
 		$NavLen ++;
@@ -31,9 +42,9 @@ class navAu extends PageUrlAu {
 			foreach ($Nav as $item => $url) {
 
 echo <<<_OUTPUT
-<li class="main_nav-item nav-SACCA item$NavLen">
+<li class="main_nav-item nav-SACCA item$NavLen js-subNavItem$NavLen">
 	<a href="$url">
-		<span class="wrap"><span class="main_nav-icon"></span><span>$item</span></span>
+		<span class="wrap"><span class="main_nav-icon"></span><span class="main_nav-item-cnt">$item</span></span>
 	</a>
 </li>
 _OUTPUT;

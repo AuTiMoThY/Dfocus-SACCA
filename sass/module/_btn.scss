@@ -16,7 +16,7 @@ button {
 	outline: none;
 	&.btn {
 		border: none;
-		background-color: none;
+		// background-color: none;
 		padding: 0;
 		margin: 0;
 	}
@@ -60,10 +60,18 @@ button {
 	&:active {
 		@include hover;
 	}
+	.btn_inner {
+		position: relative;
+		z-index: 10;
+		display: block;
+	}
 
 /*========================================================================*\
 		project 
 \*========================================================================*/
+	&.first_btn {
+		margin-right: 3em;
+	}
 	.file_download & {
 		position: relative;
 		@include wh(195, 45);
@@ -75,10 +83,8 @@ button {
 		overflow: hidden;
 		&::before {
 			@include psudoClass;
-			position: absolute;
+			@include absolute($t: 1px, $l: 1px);
 			z-index: 1;
-			top: 1px;
-			left: 1px;
 			@include wh(195-2, 45-2);
 			@include background-image(linear-gradient(#fefefe, #fefefe 50%, #f0f2f5));
 			border-radius: 5px;
@@ -124,6 +130,148 @@ button {
 			@include bg-t(-60, -101);
 		}
 	}
+	&-sacca {
+		position: relative;
+		@include wh2(100% 35);
+		color: color($colors, gr, 1);
+		line-height: 35px;
+		@include background-image(linear-gradient(#f6f6f6, #acaaaa));
+		border-radius: 0;
+		box-shadow: 1px 1px 2px rgba(#0e050a, .5);
+		margin-top: 0.5em;
+		&::before {
+			@include psudoClass;
+			position: absolute;
+			z-index: 1;
+			top: 1px;
+			left: 1px;
+			@include wh2(99% 35-2);
+			@include background-image(linear-gradient(#f9f9f9, #eaeaea 30%, #adacac));
+			// border-radius: 5px;
+			// box-shadow: inset -1px -1px 5px 3px #fff;
+			@include transition(all 0.3s $easeInOutCubic);
+		}
+		.btn_inner {
+			font-weight: bold;
+			line-height: 35px;
+		}
+
+		&.btn:hover {
+			@include background-image(linear-gradient(#e50b1b, #510907));
+			box-shadow: 1px 1px 2px rgba(#b79998, .5);
+			&::before {
+				@include opacity(0);
+			}
+			.btn_inner {
+				color: #efefef;
+			}
+		}
+		.book_cnt_page & {
+			width: 225px;
+		}
+	}
+	&-addCart {
+		.btn_inner {
+			color: color($colors, gr, 1);
+		}
+		.icon {
+			margin-right: 0.8em;
+		}
+		&.btn:hover {
+			.btn_inner {
+				
+			}
+			.icon-cart {
+				@include bg-i(-218, -43);
+			}
+		}
+	}
+	&-submit {
+		width: 140px;
+	}
+	&-reset {
+		width: 140px;
+	}
+	&-golist {
+		display: block;
+		width: 80px;
+		height: 28px;
+		margin: auto;
+		padding: 0 0.8em;
+		border: 1px solid #c6c6c6;
+		// line-height: 28px;
+		// color: #fff;
+		@include adjFontSize(13px, 1.2);
+		text-align: center;
+		&.btn-material-grey {
+			&.btn {
+				@include bg(#595757);
+			}
+			.btn-inner {
+			}
+			&:hover {
+				color: #000;
+				text-decoration: none;
+				.btn-inner {
+				}
+			}
+		}
+	}
+	&-cartDel {
+		@include absolute(0.8em, 0.8em);
+		@include wh2(25);
+		border: none;
+		background-color: transparent;
+		@include transition(all 0.3s ease);
+		.line1 {
+			display: block;
+			@include wh2(25/cos(atan(1)) 1);
+			@include bg(#595757);
+			@include transform-origin();
+			@include simple-transform(false, -45deg, -3px, -3px);
+		}
+		.line2 {
+			display: block;
+			@include wh2(25/cos(atan(1)) 1);
+			@include bg(#595757);
+			@include transform-origin();
+			@include simple-transform(false, 45deg, -3px, 3px);
+		}
+		&:after {
+			@include psudoClass;
+			@include absolute(0, 0, 0, 0);
+			margin: auto;
+			@include wh2(3);
+			@include bg(#fff);
+		}
+		&:hover {
+			@include simple-transform(1.05);
+		}
+		&:active {
+			@include simple-transform(false, false, 1px, 1px);
+		}
+	}
 
 }//.btn
 
+a.btn {
+	margin: 0;
+	&.btn-submit {
+		display: block;
+		width: 200px;
+		text-align: center;
+		margin: auto;
+		&:before {
+			@include psudoClass(dib);
+			@include triangle(top, #fff, 6px);
+			margin-right: 0.4em;
+		}
+	}
+}
+
+.btns {
+	&-wrap {
+		display: table;
+		margin: auto;
+	}
+}

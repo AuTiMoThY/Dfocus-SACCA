@@ -131,7 +131,7 @@
 	</div>
 </section>
 
-<section class="about4 row panel">
+<section id="saccaGroup" class="about4 row panel">
 	<div class="wrapper">
 		<header class="title">
 			<h2 class="title-en hide_txt">Our group</h2>
@@ -159,11 +159,7 @@
 // -------------------------------
   include_once INC_PATH.'scriptfoot.php';
 ?>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-<script src="plugin/animation.gsap.js"></script>
+
 <script>
 $(function() {
 
@@ -218,7 +214,7 @@ $(function() {
 	// build scenes
 	new ScrollMagic.Scene({triggerElement: "#aboutRow3", offset: 50})
 					.setClassToggle("#aboutRow3icon1", "flipInX") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
+					// .addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 
 });

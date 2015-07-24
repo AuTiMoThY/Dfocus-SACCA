@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+$gridPadding: 0.4em;
+.container_12 {
+	@for $i from 1 through 12 {
+		.col-style1-#{$i} {
+			width: ($i / 12) * 100%;
+			float: left;
+		}
+	}
+}

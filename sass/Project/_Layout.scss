@@ -3,15 +3,27 @@
 /*========================================================================*\
 		>>	banner
 \*========================================================================*/
+
+$page:(
+about_page:about,
+books_page:books,
+biz_page:biz,
+history_page:history,
+news_page:news,
+activity_page:news,
+resource_page:resource,
+member_page:books,
+cart_page:books
+       );
+
 .banner-wall {
 	// position: absolute;
 	// top: 90px;
 	// z-index: 1;
-	@each $page, $banner in
-		(about_page, about),
-		(books_page, books) {
-		.#{$page} & {
-			@include bgRWD('banner-#{$banner}.jpg', 1920, 255);
+	@include wh2(100% 0);
+	@each $pages, $file in $page {
+		.#{$pages} & {
+			@include bgRWD('banner-#{$file}.jpg', 1920, 255);
 		}
 	}
 }
@@ -25,6 +37,9 @@ article#main, main {
 }
 main {
 	.cnt_page & {}
+	section.row {
+		padding: 4em 0;
+	}
 }
 
 /*========================================================================*\
@@ -93,11 +108,30 @@ main {
 .fixBg {
 	// position: relative;
 	.index_page & {
-		width: 100%;
-		// height: 800px;
 		@include bgRWD('bigBg.jpg', 1920, 1289);
 		@include bg(50%, 90%);
 		background-attachment: fixed;
+	}
+	.history_page & {
+		@include bgRWD('bigBg2.jpg', 1920, 1009);
+		@include bg(50%, 50%);
+		background-attachment: fixed;
+	}
+	.map {
+		@include bgRWD('map.jpg', 1920, 686);
+		@include bg(50%, 50%);
+		// background-attachment: fixed;
+	}
+	.biz_page & {
+		position: relative;
+		&:before {
+			@include psudoClass;
+			@include absolute(0, $l:0);
+			@include bgRWD('map.jpg', 1920, 686);
+			@include opacity(0.3);
+		}
+		@include bgRWD('map.jpg', 1920, 686);
+		@include bg(50%, 50%);
 	}
 }
 
@@ -109,13 +143,14 @@ main {
 \*========================================================================*/
 .page_path {
 	position: relative;
+	@include margin-trailer();
 	.txt {
 		@include adjFontSize(13px, 2);
 	}
 	&:after {
 		@include psudoClass;
 		@include wh(100%, 10px);
-		@include bg('line1.png', 0, 0, repeat);
+		@include bg('line1.png', 50%, 0, repeat);
 	}
 	a {
 		&:hover {
