@@ -64,7 +64,7 @@
 			<!-- 四也全書 -->
 			<div class="wall-block wall-1 sacca_books">
 				<figure class="wall-figure">
-					<a href=""></a>
+					<a href="<?php webPageUrlAu('books'); ?>"></a>
 					<div class="pic"><img src="<?php path_au('temp'); ?>index_pic1.jpg" alt=""></div>
 					<figcaption>
 						<h3>四也全書</h3>
@@ -84,7 +84,7 @@
 			<!-- 最新訊息 -->
 			<div class="wall-block wall-2 sacca_news">
 				<figure class="wall-figure">
-					<a href=""></a>
+					<a href="<?php webPageUrlAu('news'); ?>"></a>
 					<div class="pic"><img src="<?php path_au('temp'); ?>index_pic3.jpg" alt=""></div>
 					<figcaption>
 						<h3>最新訊息</h3>
@@ -107,7 +107,7 @@
 			<!-- 教學資源分享 -->
 			<div class="wall-block wall-3 sacca_resource">
 				<figure class="wall-figure">
-					<a href=""></a>
+					<a href="<?php webPageUrlAu('resource'); ?>"></a>
 					<div class="pic"><img src="<?php path_au('temp'); ?>index_pic2.jpg" alt=""></div>
 					<figcaption>
 						<h3>教學資源分享</h3>
@@ -127,7 +127,7 @@
 			<!-- 活動紀錄報導 -->
 			<div class="wall-block wall-4 sacca_activity">
 				<figure class="wall-figure">
-					<a href=""></a>
+					<a href="<?php webPageUrlAu('activity'); ?>"></a>
 					<div class="pic"><img src="<?php path_au('temp'); ?>index_pic4.jpg" alt=""></div>
 					<figcaption>
 						<h3>活動紀錄報導</h3>
@@ -153,7 +153,7 @@
 					<ul class="slides">
 						<li>
 							<figure class="wall-figure">
-								<a href=""></a>
+								<a href="history_cnt.php"></a>
 								<div class="pic"><img src="<?php path_au('temp'); ?>index_banner2_1.jpg" alt=""></div>
 								<figcaption>
 									<h3>臺灣歷史記憶箱</h3>
@@ -173,7 +173,7 @@
 						</li>
 						<li>
 							<figure class="wall-figure">
-								<a href=""></a>
+								<a href="history_cnt.php"></a>
 								<div class="pic"><img src="<?php path_au('temp'); ?>index_banner2_2.jpg" alt=""></div>
 								<figcaption>
 									<h3>臺灣歷史記憶箱</h3>
@@ -193,7 +193,7 @@
 						</li>
 						<li>
 							<figure class="wall-figure">
-								<a href=""></a>
+								<a href="history_cnt.php"></a>
 								<div class="pic"><img src="<?php path_au('temp'); ?>index_banner2_3.jpg" alt=""></div>
 								<figcaption>
 									<h3>臺灣歷史記憶箱</h3>
@@ -228,11 +228,11 @@
 			<div class="wall-block wall-7">
 				<div id="bannerSlider" class="flexslider">
 					<ul class="slides">
-						<li><img src="<?php path_au('temp'); ?>index_banner3_1.jpg" alt=""></li>
-						<li><img src="<?php path_au('temp'); ?>index_banner3_2.jpg" alt=""></li>
-						<li><img src="<?php path_au('temp'); ?>index_banner3_3.jpg" alt=""></li>
-						<li><img src="<?php path_au('temp'); ?>index_banner3_4.jpg" alt=""></li>
-						<li><img src="<?php path_au('temp'); ?>index_banner3_5.jpg" alt=""></li>
+						<li><a href="javascript:alert('可由後台自訂連結');"><img src="<?php path_au('temp'); ?>index_banner3_1.jpg" alt=""></a></li>
+						<li><a href="javascript:alert('可由後台自訂連結');"><img src="<?php path_au('temp'); ?>index_banner3_2.jpg" alt=""></a></li>
+						<li><a href="javascript:alert('可由後台自訂連結');"><img src="<?php path_au('temp'); ?>index_banner3_3.jpg" alt=""></a></li>
+						<li><a href="javascript:alert('可由後台自訂連結');"><img src="<?php path_au('temp'); ?>index_banner3_4.jpg" alt=""></a></li>
+						<li><a href="javascript:alert('可由後台自訂連結');"><img src="<?php path_au('temp'); ?>index_banner3_5.jpg" alt=""></a></li>
 					</ul>
 				</div>
 			</div><!-- /.wall-block wall-7  END  !! -->

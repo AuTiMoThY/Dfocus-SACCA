@@ -131,6 +131,34 @@ header.title {
 				margin-bottom: 1.5em;
 			}
 		}
+		&.our_group {
+			width: 80%;
+			margin: auto;
+			padding-bottom: 100px;
+			@include bg('bg-aboutGroup.jpg', -80px);
+			li {
+				width: 100%;
+				float: none;
+				margin-bottom: 0.4em;
+			}
+		}
+		.group {
+			&-pic {
+				@include wh2(167 168);
+			}
+			&-cnt {
+				width: 70%;
+				padding-left: 1em;
+				h3 {
+					color: #9c000e;
+					font-family: $normal_font;
+					@include adjFontSize(21px, 1.2);
+				}
+				p {
+					text-align: left;
+				}
+			}
+		}
 	}
 }
 

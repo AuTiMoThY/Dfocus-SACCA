@@ -57,11 +57,18 @@
 		}
 	}
 	&-figure {
+		position: relative;
 		&:hover {
 			img {
 				@include opacity(0.8);
 				@include scale(1);
 			}
+		}
+		a {
+			@include absolute(0, $l:0);
+			z-index: 1;
+			display: block;
+			@include wh2;
 		}
 		figcaption {
 			position: absolute;
