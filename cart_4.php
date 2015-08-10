@@ -273,6 +273,7 @@
 			</div><!-- /.cart-block  END  !! -->
 
 			<div class="btns cf" style="position: relative;">
+				<div class="link-cart_note"><a href="cart_note.php" class="txt-gr1 txt-fz13" target="_blank">購物說明與注意事項</a></div>
 				<!-- <button type="reset" class="btn btn-reset btn-material-grey first_btn">取消重填</button> -->
 				<a href="<?php webPageUrlAu('index'); ?>" class="btn btn-submit btn-material-pink">
 					訂購完成 回首頁

@@ -70,7 +70,7 @@
 					<li>
 						<span class="frm--dfocus required">
 							<label for="" class="frm__label ib">會員帳號</label>
-							<input type="text" name="" id="" class="frm__field ib" placeholder="請輸入您的帳號">
+							<input type="text" name="" id="" class="frm__field ib" placeholder="請輸入您的E-mail">
 						</span>
 					</li>
 					<li>
@@ -91,6 +91,7 @@
 					<p class="txt-gr2">前往</p>
 					<ul class="cf">
 						<li><a href="business.php" class="txt-gr1">連絡四也</a></li>
+						<li><a href="cart_note.php" class="txt-gr1" target="_blank">購物說明與注意事項</a></li>
 					</ul>
 				</div>
 			</div>

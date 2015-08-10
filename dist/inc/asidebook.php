@@ -5,10 +5,11 @@
 			</header>
 			<div class="asideMod-block">
 				<ul>
-					<li id="ageItem1"><a href="books_list.php">國小中低年級</a></li>
+					<li id="ageItem1"><a href="books_list.php">國小低年級</a></li>
 					<li id="ageItem2"><a href="books_list.php">國小中年級</a></li>
 					<li id="ageItem3"><a href="books_list.php">國小高年級</a></li>
 					<li id="ageItem4"><a href="books_list.php">國高中以上</a></li>
+					<li id="ageItem5"><a href="books_list.php">成人‧親師</a></li>
 				</ul>
 			</div><!-- /.asideMod-block  END  !! -->
 		</div><!-- /.asideMod__age  END  !! -->
@@ -125,6 +126,14 @@
 				</ul>
 			</div><!-- /.blockMod-block  END  !! -->
 		</div><!-- /.blockMod__hot  END  !! -->
+		<div class="blockMod other_link">
+			<h3 class="txt-gr2">有購物或其他問題嗎?</h3>
+			<p class="txt-gr2">前往</p>
+			<ul class="cf">
+				<li><a href="business.php" class="txt-gr1">連絡四也</a></li>
+				<li><a href="cart_note.php" class="txt-gr1" target="_blank">購物說明與注意事項</a></li>
+			</ul>
+		</div>
 		<div class="blockMod blockMod__fb">
 			<img src="<?php path_au('temp'); ?>FB.jpg" alt="">
 		</div>

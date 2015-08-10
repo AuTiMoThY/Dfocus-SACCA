@@ -64,8 +64,8 @@
 				<ul class="cf">
 					<li>
 						<span class="frm--dfocus">
-							<label for="" class="frm__label ib">電子信箱</label>
-							<input type="text" name="" id="" class="frm__field ib" placeholder="請輸入註冊時填寫的電子信箱">
+							<label for="" class="frm__label ib">會員帳號</label>
+							<input type="text" name="" id="" class="frm__field ib" placeholder="請輸入註冊時填寫的帳號 ( E-mail )">
 						</span>
 					</li>
 				</ul>

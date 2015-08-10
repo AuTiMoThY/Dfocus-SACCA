@@ -20,17 +20,18 @@
 					<li class="title"><a href="<?php webPageUrlAu('resource'); ?>">教學資源分享</a></li>
 				</ul>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('business'); ?>">合作相關</a></li>
-					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">作家有約</a></li>
-					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">實地走讀</a></li>
-					<li><a href="<?php webPageUrlAu('webPageBuild'); ?>">文學營</a></li>
+					<li class="title"><a href="<?php webPageUrlAu('books_home'); ?>">四也書城</a></li>
+					<li class=""><a href="<?php webPageUrlAu('cart_1'); ?>">購物車</a></li>
+					<li class=""><a href="cart_note.php" target="_blank">購物說明與注意事項</a></li>
 				</ul>
 			</div>
 			<div class="sitemap-col col">
 				<div class="pattern"></div>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('books_home'); ?>">四也書城</a></li>
-					<li class=""><a href="<?php webPageUrlAu('cart_1'); ?>">購物車</a></li>
+					<li class="title"><a href="<?php webPageUrlAu('business'); ?>">合作相關</a></li>
+<!-- 					<li><a href="<?php //webPageUrlAu('webPageBuild'); ?>">作家有約</a></li>
+					<li><a href="<?php //webPageUrlAu('webPageBuild'); ?>">實地走讀</a></li>
+					<li><a href="<?php //webPageUrlAu('webPageBuild'); ?>">文學營</a></li> -->
 				</ul>
 				<ul class="sitemap-row">
 					<!-- 未登入時顯示  ↓↓↓ -->

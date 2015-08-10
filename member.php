@@ -89,13 +89,13 @@
 							<span class="txt-gr1 txt-fz13 ib">1950-07-02</span>
 						</span>
 					</li>
-					<li>
+<!-- 					<li>
 						<span class="frm--dfocus required">
 							<label for="" class="frm__label ib">電子信箱</label>
-							<!-- 帶入原資料  ↓↓↓ -->
+							<!-- 帶入原資料  ↓↓↓ --
 							<input type="text" name="" id="" class="frm__field ib" value="yoman@gmail.com" placeholder="請填入您的常用e-mail信箱">
 						</span>
-					</li>
+					</li> -->
 					<li>
 						<span class="frm--dfocus required">
 							<label for="" class="frm__label ib">白天聯繫電話</label>
@@ -236,6 +236,7 @@
 			<p class="txt-gr2">前往</p>
 			<ul class="cf">
 				<li><a href="business.php" class="txt-gr1">連絡四也</a></li>
+				<li><a href="cart_note.php" class="txt-gr1" target="_blank">購物說明與注意事項</a></li>
 			</ul>
 		</div>
 	</div><!-- /.signup-container  END  !! -->

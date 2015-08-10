@@ -45,7 +45,7 @@
 	<div class="wrapper">
 		<a href="<?php webPageUrlAu('index');?>" class="ib txt txt-gr1">首頁</a>
 		<span class="gt ib txt txt-gr1">&gt;</span>
-		<p class="ib txt txt-gr1">活動紀錄報導</p>
+		<p class="ib txt txt-gr1">教學資源分享</p>
 	</div>
 </section>
 
@@ -248,7 +248,7 @@
 <script>
 $(function(){
 
-	$(".js-subNavItem5").addClass('active');
+	$(".js-subNavItem2").addClass('active');
 
 (function(){
 	

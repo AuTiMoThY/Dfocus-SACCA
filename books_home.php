@@ -95,32 +95,15 @@
 								</h3>
 								<div class="book-inf cf">
 									<span class="book-auth left">張友漁</span>
-									<span class="book-price right">定價：290 元</span>
+									<div class="right">
+										<span class="book-price tdlt">定價：290 元</span><br>
+										<span class="book-price">特價：280 元</span>
+									</div>
 								</div>
 							</figcaption>
 						</figure>
 					</li>
-					<li class="book-list-item">
-						<a href="books_cnt.php" class="block_link"></a>
-						<figure>
-							<div class="book-pic pic"><img src="<?php path_au('temp'); ?>tem_book1-205_290.jpg" alt=""></div>
-							<figcaption>
-								<h3 class="book-name">
-									<?php
-										//  書籍名稱
-										//  此處示意 顯示前 18 個字，超果以...取代
-										$book_name="砲來了，金門快跑!(三版)砲來了，金門快跑!(三版)砲來了，金門快跑!(三版)砲來了，金門快跑!(三版)砲來了，金門快跑!(三版)砲來了，金門快跑!(三版)";
-										$length=18;
-										content_show_length($book_name, $length);
-									?>
-								</h3>
-								<div class="book-inf cf">
-									<span class="book-auth left">張友漁</span>
-									<span class="book-price right">定價：290 元</span>
-								</div>
-							</figcaption>
-						</figure>
-					</li>
+
 					<li class="book-list-item">
 						<a href="books_cnt.php" class="block_link"></a>
 						<figure>
@@ -137,11 +120,15 @@
 								</h3>
 								<div class="book-inf cf">
 									<span class="book-auth left">張友漁</span>
-									<span class="book-price right">定價：290 元</span>
+									<div class="right">
+										<span class="book-price tdlt">定價：290 元</span><br>
+										<span class="book-price">特價：280 元</span>
+									</div>
 								</div>
 							</figcaption>
 						</figure>
 					</li>
+
 					<li class="book-list-item">
 						<a href="books_cnt.php" class="block_link"></a>
 						<figure>
@@ -158,7 +145,10 @@
 								</h3>
 								<div class="book-inf cf">
 									<span class="book-auth left">張友漁</span>
-									<span class="book-price right">定價：290 元</span>
+									<div class="right">
+										<span class="book-price tdlt">定價：290 元</span><br>
+										<span class="book-price">特價：280 元</span>
+									</div>
 								</div>
 							</figcaption>
 						</figure>
@@ -189,7 +179,8 @@
 								</h3>
 								<div class="book-inf cf">
 									<span class="book-auth">作者：張友漁</span>
-									<span class="book-price">定價：290 元</span>
+									<span class="book-price tdlt">定價：290 元</span>
+									<span class="book-price">特價：280 元</span>
 								</div>
 								<div class="add_to_cart">
 									<button type="button" class="btn btn-sacca btn-addCart">
@@ -216,7 +207,8 @@
 								</h3>
 								<div class="book-inf cf">
 									<span class="book-auth">作者：張友漁</span>
-									<span class="book-price">定價：290 元</span>
+									<span class="book-price tdlt">定價：290 元</span>
+									<span class="book-price">特價：280 元</span>
 								</div>
 								<div class="add_to_cart">
 									<button type="button" class="btn btn-sacca btn-addCart">
@@ -243,61 +235,8 @@
 								</h3>
 								<div class="book-inf cf">
 									<span class="book-auth">作者：張友漁</span>
-									<span class="book-price">定價：290 元</span>
-								</div>
-								<div class="add_to_cart">
-									<button type="button" class="btn btn-sacca btn-addCart">
-										<span class="btn_inner"> <i class="icon icon-cart"></i>加入購物車 </span>
-									</button>
-								</div>
-							</figcaption>
-						</figure>
-					</li>
-
-					<li class="book-list-item cf"><a href="books_cnt.php" class="block_link"></a>
-						<figure class="cf">
-							<div class="book-pic pic left"><img src="<?php path_au('temp'); ?>tem_book1-205_290.jpg" alt=""></div>
-							<figcaption class="right">
-								<div class="awarded_cate">金鼎獎</div>
-								<h3 class="book-name">
-									<?php
-										//  書籍名稱
-										//  此處示意 顯示前 25 個字，超過以...取代
-										$book_name="砲來了，金門快跑!(三版)砲來了，金門快跑!(三版)砲來了，金門快跑!(三版)";
-										$length=25;
-										content_show_length($book_name, $length);
-									?>
-								</h3>
-								<div class="book-inf cf">
-									<span class="book-auth">作者：張友漁</span>
-									<span class="book-price">定價：290 元</span>
-								</div>
-								<div class="add_to_cart">
-									<button type="button" class="btn btn-sacca btn-addCart">
-										<span class="btn_inner"> <i class="icon icon-cart"></i>加入購物車 </span>
-									</button>
-								</div>
-							</figcaption>
-						</figure>
-					</li>
-
-					<li class="book-list-item cf"><a href="books_cnt.php" class="block_link"></a>
-						<figure class="cf">
-							<div class="book-pic pic left"><img src="<?php path_au('temp'); ?>tem_book1-205_290.jpg" alt=""></div>
-							<figcaption class="right">
-								<div class="awarded_cate">金鼎獎</div>
-								<h3 class="book-name">
-									<?php
-										//  書籍名稱
-										//  此處示意 顯示前 25 個字，超過以...取代
-										$book_name="砲來了，金門快跑!(三版)砲來了，金門快跑!(三版)砲來了，金門快跑!(三版)";
-										$length=25;
-										content_show_length($book_name, $length);
-									?>
-								</h3>
-								<div class="book-inf cf">
-									<span class="book-auth">作者：張友漁</span>
-									<span class="book-price">定價：290 元</span>
+									<span class="book-price tdlt">定價：290 元</span>
+									<span class="book-price">特價：280 元</span>
 								</div>
 								<div class="add_to_cart">
 									<button type="button" class="btn btn-sacca btn-addCart">

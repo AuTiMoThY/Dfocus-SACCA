@@ -262,9 +262,9 @@
 </div>
 <!-- 使用匯款or劃撥時顯示  ↑↑↑ -->
 			</div><!-- /.cart-block  END  !! -->
-
-			<div class="btns cf" style="position: relative;">
-				<a href="javascript:history.go(-1);" class="left txt-gr1" style="color:#646464; font-size: 13px;letter-spacing:1px;position: absolute; bottom:0;"><i class="icon icon-triL"></i>回上一步</a>
+			<div class="btns cf" style="position: relative; display: table; width: 100%; text-align: center;">
+				<a href="javascript:history.go(-1);" class="left txt-gr1" style="color:#646464; font-size: 13px;letter-spacing:1px;position: absolute; left:0; z-index: 10; line-height: 30px;"><i class="icon icon-triL"></i>回上一步</a>
+				<div class="link-cart_note"><a href="cart_note.php" class="txt-gr1 txt-fz13" target="_blank">購物說明與注意事項</a></div>
 				<!-- <button type="reset" class="btn btn-reset btn-material-grey first_btn">取消重填</button> -->
 				<button type="submit" class="btn btn-submit btn-material-pink right">下一步</button>
 			</div>

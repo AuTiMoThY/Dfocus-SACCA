@@ -72,7 +72,7 @@ $col-padding-top: 50px;
 			li {
 				// margin-bottom: 1em;
 				color: #595757;
-				@include adjFontSize(13px);
+				// @include adjFontSize(13px);
 			}
 			.frm__label {
 				width: 100px;
@@ -289,4 +289,117 @@ $col-padding-top: 50px;
 .order_number {
 	color: #c14948;
 	font-weight: bold;
+}
+
+.cart_note {
+	&-container {
+		position: relative;
+		padding: 3em;
+		@include bg(#f9f9f9);
+		margin-bottom: 5em;
+	}
+	&-block {
+		position: relative;
+		padding: 2.7em 1em;
+		margin-bottom: 1.2em;
+		border-bottom: 1px dotted #000;
+		letter-spacing: 1px;
+		font-size: 15px;
+		// font-family: $normal_font;
+		&:first-of-type {
+			border-top: 1px dotted #000;
+		}
+		hgroup {
+			position: relative;
+			@include wh2;
+			margin-bottom: 0.8em;
+		}
+		h3 {
+			// font-family: $normal_font;
+			font-weight: bold;
+		}
+		p {
+			width: 100%;
+			// @include margin-trailer(0.8);
+			&.b {
+				padding-left: 1.2em;
+				font-weight: bold;
+				@include rhythm-margins(0.6);
+			}
+		}
+		ul {
+			&.disc {
+				list-style-type: disc;
+				list-style-position: inside;
+			}
+		}
+		ol {
+			&.decimal {
+				list-style-type: decimal;
+				padding-left: 2em;
+			}
+		}
+		li {
+			width: 100%;
+			float: none;
+			line-height: 1.6;
+		}
+	}
+	&-cnt {
+		padding: 0 1em;
+	}
+	&-table {
+		// border-collapse:collapse;
+		// border:1px #525152 solid;
+		margin:0 auto;
+		tr {
+			border-bottom: 1px solid #C8C8C8;
+			border-left: 1px solid #C8C8C8;
+			border-right: 1px solid #C8C8C8;
+			&:first-of-type {
+				border-top: 1px solid #C8C8C8;
+			}
+		}
+		th {
+			vertical-align: middle;
+			background-color: #d6d3d6;
+		}
+		td {
+			padding: 0.8em;
+			line-height: 1.6;
+			vertical-align: middle;
+			&:first-of-type {
+				text-align: center;
+				background-color: #bdbabd;
+			}
+			&:nth-of-type(2) {
+				border-right: 1px solid #C8C8C8;
+			}
+		}
+		.out {
+			position:relative;
+			border-top: 50px #D6D3D6 solid;
+			border-left: 100px #BDBABD solid;
+			width:0px;
+			height:0px;
+			span {
+				display: block;
+				width: 40px;
+			}
+			.method {
+				@include absolute(-40px, 5px);
+			}
+			.area {
+				@include absolute(-20px, 50px);
+			}
+		}
+	}
+}
+
+.link-cart_note {
+	@include absolute($l:0, $r:0);
+	margin: auto;
+	a {
+		line-height: 30px;
+	}
 }

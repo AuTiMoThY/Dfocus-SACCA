@@ -52,7 +52,7 @@
 	</div><!-- /.wrapper  END  !! -->
 </section>
 
-<section id="aboutRow2" class="wall-bar">
+<section id="aboutRow2" class="wall-bar panel">
 	<div class="wrapper">
 		<div class="slogan">
 			<h2>所有的故事<br>都是從眼睛看到船的那一刻開始...</h2>

@@ -95,6 +95,11 @@
 		font-size: em(21);
 		font-weight: bold;
 		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		.tdlt & {
+			// color: #ddd;
+			font-size: 100%;
+			font-weight: normal;
+		}
 	}
 	&-fz13 {
 		font-size: em(13);
@@ -202,6 +207,23 @@ a {
 	&-payment_inf {
 		@include wh2(93 21);
 		@include bg-t(-450, -169);
+	}
+	&-cart_note {
+		@include wh2(273 28);
+		@include bg-t(-495, -89);
+		margin: 0 auto 2em;
+	}
+	&-cart_note1 {
+		@include wh2(44 21);
+		@include bg-t(-170, -191);
+	}
+	&-cart_note2 {
+		@include wh2(140 21);
+		@include bg-t(-170, -191);
+	}
+	&-cart_note3 {
+		@include wh2(115 21);
+		@include bg-t(-356, -191);
 	}
 }
 
