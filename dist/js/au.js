@@ -45,15 +45,19 @@ function isOpen($this, $thisClass) {
 function quickBarBlockCtrl(){
 	$(".quick_login").click(function() {
 		isOpen($(".quick_login-wrap"), $(".quick_login-wrap.open"))
+		isOpen($(".popup-wrap"), $(".popup-wrap.open"))
 	});
 	$(".quick_login-wrap").mouseleave(function() {
 		isOpen($(".quick_login-wrap"), $(".quick_login-wrap.open"))
+		isOpen($(".popup-wrap"), $(".popup-wrap.open"))
 	});
 	$(".quick_cart").click(function() {
 		isOpen($(".quick_cart-wrap"), $(".quick_cart-wrap.open"))
+		isOpen($(".popup-wrap"), $(".popup-wrap.open"))
 	});
 	$(".quick_cart-wrap").mouseleave(function() {
 		isOpen($(".quick_cart-wrap"), $(".quick_cart-wrap.open"))
+		isOpen($(".popup-wrap"), $(".popup-wrap.open"))
 	});
 }
 

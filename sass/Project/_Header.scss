@@ -4,8 +4,11 @@
 }
 
 .header_group {
-	position: relative;
+	// position: relative;
 	width: 100%;
+	position: fixed;
+	z-index: 999;
+	top: 0;
 }
 /*========================================================================*\
 		>>	global_hd  quick_bar  logo
@@ -207,33 +210,49 @@ $triW2: 16px;
 			}
 		}
 	}
+	&-block {
+		// position: relative;
+
+	}
+}
+
+/* >>> popup **************************************************/
+.popup {
+	display: none;
+	&.open {
+		display: block;
+	}
+	&.toggle {
+		@include transition(all 0.3s ease(in-out-cubic));
+	}
+	.tri {
+		position: absolute;
+		top: 0.2em;
+		// right: 42px + ($triW * 1.5) - 2px;
+		@include triangle(top, #cbcbcb, $triW2);
+		z-index: 80;
+		&-after {
+			position: absolute;
+			top: 0.3em;
+			// right: 42px + ($triW * 1.5);
+			@include triangle(top, #fff, $triW);
+			z-index: 81;
+		}
+	}
 	.padding {
 		display: block;
 		position: absolute;
 		top: -10%;
-		left: -40%;
+		left: -20%;
 		z-index: 78;
-		@include wh(180%);
+		@include wh(140%, 120%);
 		background: none;
 	}
-	&-block {
-		// position: relative;
-		.tri {
-			position: absolute;
-			top: 0.2em;
-			// right: 42px + ($triW * 1.5) - 2px;
-			@include triangle(top, #cbcbcb, $triW2);
-			z-index: 80;
-			&-after {
-				position: absolute;
-				top: 0.3em;
-				// right: 42px + ($triW * 1.5);
-				@include triangle(top, #fff, $triW);
-				z-index: 81;
-			}
-		}
-		.toggle {
-			@include transition(all 0.3s ease(in-out-cubic));
+	&-wrap {
+		&.open {
+			@include fixed(61px, 0, $l:0);
+			z-index: 1000;
+			height: 0;
 		}
 	}
 }
@@ -298,6 +317,10 @@ $triW2: 16px;
 	&-block {
 		@include wh(340, 155);
 		@extend %quickBarBlock;
+		&.login-success {
+			// width: 280px;
+			height: auto;
+		}
 	}
 }
 .u_login {
@@ -520,3 +543,28 @@ $u_cartItemH: 145px;
 // 		}
 // 	}
 // }
+
+
+.login-success {
+	p {
+		border-bottom: 1px dotted #333;
+		padding-bottom: 0.4em;
+		margin-bottom: 0.4em;
+	}
+	ul {
+		margin-top: 5px;
+	}
+	li {
+		width: 100%;
+		border-top: 1px solid #C6C6C6;
+		margin: 3px 0;
+		text-align: center;
+	}
+	.btns {
+		margin: 0.8em auto;
+		text-align: center;
+	}
+	.u_register {
+
+	}
+}

@@ -81,8 +81,8 @@
 					<div class="book-pubDate">出版日期： <span class="txt-bk1">2011-10-05</span></div>
 					<div class="book-lang">語    言： <span class="txt-bk1">繁體中文</span></div>
 					<div class="book-price0 tdlt">定    價：  <span class="txt-bk1 "><span class="txt-spec">390</span> 元</span></div>
-					<div class="book-price">網路優惠價：  <span class="txt-bk1"><span class="txt-spec">5.5</span> 折</span></div>
-					<div class="book-price">特    價：  <span class="txt-spec txt-r">290</span> <span class="txt-bk1">元</span></div>
+					<div class="book-price">網路優惠價：  <span class="txt-bk1"><span class="txt-spec">5.5</span> 折&emsp;<span class="txt-spec txt-r">290</span> <span class="txt-bk1">元</span></span></div>
+					<!-- <div class="book-price">特    價：  </div> -->
 					<div class="add_to_cart cf">
 						<button type="button" class="btn btn-sacca btn-addCart left">
 							<span class="btn_inner"> <i class="icon icon-cart"></i>加入購物車 </span>
@@ -104,9 +104,9 @@
 			<li> <a href="#tab0" id="">優惠活動</a></li>
 			<li> <a href="#tab1" id="">內容簡介</a></li>
 			<li> <a href="#tab2" id="">作者/繪者簡介</a></li>
+			<li> <a href="#tab5" id="">目錄</a></li>
 			<li> <a href="#tab3" id="">得獎紀錄</a></li>
 			<li> <a href="#tab4" id="">推薦序</a></li>
-			<li> <a href="#tab5" id="">目錄</a></li>
 			<li> <a href="#tab6" id="">詳細資料</a></li>
 		</ul>
 		<!--  .tab_container  START  !!  -->
@@ -197,6 +197,24 @@
 				</section>
 			</div><!--  /#tab2 .tab_content  END  !!  -->
 			
+			<!--  #tab5 .tab_content  START  !!  -->
+			<!-- 目錄 -->
+			<div id="tab5" class="tab_content">
+			<section class="mod mod-tab_cnt">
+					<h1>
+						<span class="icon icon-tag">
+							<svg class="icon svg_icon_tag">
+								<use xlink:href="#shape-tag"></use>
+							</svg>
+						</span>
+						<span class="title1">目錄</span>
+						<span class="title2">Table of Contents</span>
+					</h1>
+					<!-- 圖文編輯器 -->
+					<p>後台圖文編輯器</p>
+				</section>
+			</div><!--  /#tab5 .tab_content  END  !!  -->
+			
 			<!--  #tab3 .tab_content  START  !!  -->
 			<!-- 得獎紀錄 -->
 			<div id="tab3" class="tab_content">
@@ -232,24 +250,6 @@
 					<p>後台圖文編輯器</p>
 				</section>
 			</div><!--  /#tab4 .tab_content  END  !!  -->
-			
-			<!--  #tab5 .tab_content  START  !!  -->
-			<!-- 目錄 -->
-			<div id="tab5" class="tab_content">
-			<section class="mod mod-tab_cnt">
-					<h1>
-						<span class="icon icon-tag">
-							<svg class="icon svg_icon_tag">
-								<use xlink:href="#shape-tag"></use>
-							</svg>
-						</span>
-						<span class="title1">目錄</span>
-						<span class="title2">Table of Contents</span>
-					</h1>
-					<!-- 圖文編輯器 -->
-					<p>後台圖文編輯器</p>
-				</section>
-			</div><!--  /#tab5 .tab_content  END  !!  -->
 
 			<!--  #tab6 .tab_content  START  !!  -->
 			<!-- 詳細資料 -->
@@ -322,6 +322,14 @@
 ?>
 
 <script>
+$(window).load(function() {
+	$(".other_link").hide();
+	$(".other_link").addClass('blockMod');
+	$(".other_link").show();
+});
+
+</script>
+<script>
 $(function(){
 
 	$(".js-navItem2").addClass('active');
@@ -329,18 +337,7 @@ $(function(){
 
 
 })
-</script>
-<script>
 
-$(window).load(function() {
-	$("#bannerSlider").flexslider({
-		animation      : "fade",
-		controlNav     : true,
-		animationLoop  : true,
-		slideshow      : true,
-		slideshowSpeed : 5000
-	})
-});
 </script>
 <?php
 // -------------------------------

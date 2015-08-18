@@ -126,14 +126,12 @@
 				</ul>
 			</div><!-- /.blockMod-block  END  !! -->
 		</div><!-- /.blockMod__hot  END  !! -->
-		<div class="blockMod other_link">
-			<h3 class="txt-gr2">有購物或其他問題嗎?</h3>
-			<p class="txt-gr2">前往</p>
-			<ul class="cf">
-				<li><a href="business.php" class="txt-gr1">連絡四也</a></li>
-				<li><a href="cart_note.php" class="txt-gr1" target="_blank">購物說明與注意事項</a></li>
-			</ul>
-		</div>
+<?php
+// -------------------------------
+// float block
+// -------------------------------
+  include_once INC_PATH.'floatblock.php';
+?>
 		<div class="blockMod blockMod__fb">
 			<img src="<?php path_au('temp'); ?>FB.jpg" alt="">
 		</div>

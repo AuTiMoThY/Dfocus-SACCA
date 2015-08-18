@@ -46,7 +46,7 @@
 		<a href="<?php webPageUrlAu('index');?>" class="ib txt txt-gr1">首頁</a>
 		<span class="gt ib txt txt-gr1">&gt;</span>
 		<p class="ib txt txt-gr1">最新消息</p>
-		<a href="news.php" class="btn btn-golist btn-material-grey">返回列表</a>
+		<a href="news.php" class="btn btn-golist btn-material-grey" style="width: auto; margin: auto;">返回列表</a>
 	</div>
 </section>
 
@@ -64,7 +64,7 @@
 			<!-- 圖文編輯器範圍 -->
 			<img src="<?php path_au('temp'); ?>tem3.jpg" alt="" class="temporary">
 		</div>
-		<a href="news.php" class="btn btn-material-grey btn-golist">返回列表</a>
+		<a href="news.php" class="btn btn-material-grey btn-golist" style="width: 100px; margin: auto;">返回列表</a>
 	</div>
 </section>
 <section class="row news-cnt-foot">

@@ -84,18 +84,18 @@
 						</span>
 					</li>
 					<li style="margin-bottom:3.5em;">
-						<span class="frm--dfocus required">
+						<span class="frm--dfocus">
 							<label for="birthday" class="frm__label ib">生　　日</label>
 							<span class="txt-gr1 txt-fz13 ib">1950-07-02</span>
 						</span>
 					</li>
-<!-- 					<li>
+					<li>
 						<span class="frm--dfocus required">
 							<label for="" class="frm__label ib">電子信箱</label>
-							<!-- 帶入原資料  ↓↓↓ --
+							<!-- 帶入會員帳號  ↓↓↓ -->
 							<input type="text" name="" id="" class="frm__field ib" value="yoman@gmail.com" placeholder="請填入您的常用e-mail信箱">
 						</span>
-					</li> -->
+					</li>
 					<li>
 						<span class="frm--dfocus required">
 							<label for="" class="frm__label ib">白天聯繫電話</label>
@@ -189,6 +189,7 @@
 									<label for="" class="frm__label">是</label>
 									<input type="radio" name="" id="" class="frm__radio">
 									<label for="" class="frm__label">否</label>
+									<p class="txt-gr1 txt-fz13" style="line-height: 2.6">※四也出版將不定期寄送最新商品活動、課程、優惠等資訊</p>
 								</li>
 							</ul>
 						</div>
@@ -231,14 +232,13 @@
 				</div>
 			</div>
 		</form>
-		<div class="other_link" style="top: 9em; right: 3em;">
-			<h3 class="txt-gr2">有購物或其他問題嗎?</h3>
-			<p class="txt-gr2">前往</p>
-			<ul class="cf">
-				<li><a href="business.php" class="txt-gr1">連絡四也</a></li>
-				<li><a href="cart_note.php" class="txt-gr1" target="_blank">購物說明與注意事項</a></li>
-			</ul>
-		</div>
+<?php
+// -------------------------------
+// float block
+// -------------------------------
+  include_once INC_PATH.'floatblock.php';
+?>
+
 	</div><!-- /.signup-container  END  !! -->
 
 </div>

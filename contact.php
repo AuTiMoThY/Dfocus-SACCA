@@ -4,7 +4,7 @@
 	require_once INC_PATH.'aunav.php';
 ?>
 
-<title>合作相關 | 四也出版</title>
+<title>聯絡四也 | 四也出版</title>
 
 <?php
 // -------------------------------
@@ -45,7 +45,7 @@
 	<div class="wrapper">
 		<a href="<?php webPageUrlAu('index');?>" class="ib txt txt-gr1">首頁</a>
 		<span class="gt ib txt txt-gr1">&gt;</span>
-		<p class="ib txt txt-gr1">合作相關</p>
+		<p class="ib txt txt-gr1">聯絡四也</p>
 	</div>
 </section>
 
@@ -190,7 +190,7 @@
 				<svg class="icon svg_icon_mail ib ml">
 					<use xlink:href="#shape-mail"></use>
 				</svg>
-				<span class="txt-r1 ib">E-mail：writer@saccacapital.com</span>
+				<span class="txt-r1 ib">E-mail：writer@4yabooks.com</span>
 			</li>
 			<li>
 				<svg class="icon svg_icon_building ib">
@@ -265,7 +265,7 @@ $(function(){
 	})
 	.setClassToggle('body', 'mapAction-active')
 	.setTween(mapAction)
-	// .triggerHook(0)
+	.triggerHook(0.8)
 	// .addIndicators({name: "1 (duration: 0)"})
 	.addTo(scrollMagicController);
 

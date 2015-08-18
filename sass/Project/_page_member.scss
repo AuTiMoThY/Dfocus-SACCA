@@ -229,8 +229,11 @@
 	}
 }
 
+/*========================================================================*\
+		>>	other_link
+\*========================================================================*/
 .other_link {
-	@include absolute(2.7em, 1em);
+	@include absolute(9em, 3em);
 	@include wh2(220 auto);
 	border: 1px solid #bcbcbc;
 	padding: 1.2em;
@@ -252,7 +255,7 @@
 	}
 	li {
 		position: relative;
-		font-size: em(13);
+		@include adjFontSize(13px, 0.8);
 		&:before {
 			@include psudoClass(dib);
 			@include triangle(right, #a4a4a4, 5px);
@@ -262,6 +265,13 @@
 	&.blockMod {
 		position: static;
 		margin-bottom: 1.2em;
+	}
+	.signup-block & {
+		top: 2.7em;
+		right: 1em;
+		li {
+			margin-bottom: 0;
+		}
 	}
 }
 

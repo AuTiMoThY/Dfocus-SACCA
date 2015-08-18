@@ -246,7 +246,7 @@
 			<h2>所有的故事<br>都是從眼睛看到船的那一刻開始...</h2>
 			<div class="footLogo"><?php include IMG_PATH.'logo.svg'; ?></div>
 			<p>
-				台灣這片土地，<br>
+				臺灣這片土地，<br>
 				有著一群愛閱讀、愛聽故事的孩子。<br>
 				<br>
 				他們唱歌、寫詩， 長大成了作家、老師、父親和母親，<br>

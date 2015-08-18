@@ -134,12 +134,60 @@ header.title {
 		&.our_group {
 			width: 80%;
 			margin: auto;
-			padding-bottom: 100px;
-			@include bg('bg-aboutGroup.jpg', -80px);
+			// padding-bottom: 100px;
+			&:after {
+				@include psudoClass;
+				width: 100%;
+				height: 0;
+				@include bg('aboutIcon3.jpg');
+				// background-image: url('');
+				padding-bottom: percentage(251 / 989);
+				background-position: -81px 50%;
+			}
+			// @include bg('bg-aboutGroup.jpg', -80px);
 			li {
+				position: relative;
 				width: 100%;
 				float: none;
 				margin-bottom: 0.4em;
+				&:before {
+					@include psudoClass();
+					@include absolute(em(6), em(70));
+					z-index: 2;
+					@include wh2(25);
+					@include bg-i(-110, -31);
+					background-color: #eeeeeb;
+				}
+				&:after {
+					@include psudoClass;
+					@include absolute(em(18), em(79));
+					z-index: 1;
+					@include wh2(6 100%);
+					@include bg('dot.png', 50%, 0, repeat-y);
+				}
+			}
+			.people1_icon {
+				@include absolute($b:0, $r:86px);
+				@include wh2(156 150);
+				@include bg('p1icon.png');
+			}
+			.people2_icon {
+				@include absolute($b:0, $r:0);
+				z-index: 11;
+				@include wh2(162 294);
+				@include bg('p2icon.png');
+			}
+			.people3_icon {
+				@include absolute($b:-18px, $r:10px);
+				z-index: 11;
+				@include wh2(191 209);
+				@include bg('p3icon.png');
+			}
+			.people5_icon {
+				@include absolute(-25px, $r:90px);
+				z-index: 11;
+				@include wh2(127 123);
+				@include bg('p5icon.png');
 			}
 		}
 		.group {
@@ -161,7 +209,6 @@ header.title {
 		}
 	}
 }
-
 
 @include keyframes(flipInX){
   0% {

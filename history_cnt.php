@@ -46,7 +46,7 @@
 		<a href="<?php webPageUrlAu('index');?>" class="ib txt txt-gr1">首頁</a>
 		<span class="gt ib txt txt-gr1">&gt;</span>
 		<p class="ib txt txt-gr1">臺灣歷史記憶箱</p>
-			<a href="history.php" class="btn btn-material-grey btn-golist">返回列表</a>
+			<a href="history.php" class="btn btn-material-grey btn-golist" style="width: auto; margin: auto;">返回列表</a>
 	</div>
 </section>
 

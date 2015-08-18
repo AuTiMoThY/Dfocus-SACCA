@@ -9,7 +9,7 @@ class PageUrlAu {
 	public $index        = "index.php";
 	public $about        = "about.php";
 	public $books        = "books_home.php";
-	public $business     = "business.php";
+	public $contact      = "contact.php";
 	public $history      = "history.php";
 	public $news         = "news.php";
 	public $activity     = "activity.php";

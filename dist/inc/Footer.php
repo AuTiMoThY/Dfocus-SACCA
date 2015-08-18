@@ -20,7 +20,7 @@
 					<li class="title"><a href="<?php webPageUrlAu('resource'); ?>">教學資源分享</a></li>
 				</ul>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('books_home'); ?>">四也書城</a></li>
+					<li class="title"><a href="<?php webPageUrlAu('books'); ?>">四也書城</a></li>
 					<li class=""><a href="<?php webPageUrlAu('cart_1'); ?>">購物車</a></li>
 					<li class=""><a href="cart_note.php" target="_blank">購物說明與注意事項</a></li>
 				</ul>
@@ -28,7 +28,7 @@
 			<div class="sitemap-col col">
 				<div class="pattern"></div>
 				<ul class="sitemap-row">
-					<li class="title"><a href="<?php webPageUrlAu('business'); ?>">合作相關</a></li>
+					<li class="title"><a href="<?php webPageUrlAu('contact'); ?>">聯絡四也</a></li>
 <!-- 					<li><a href="<?php //webPageUrlAu('webPageBuild'); ?>">作家有約</a></li>
 					<li><a href="<?php //webPageUrlAu('webPageBuild'); ?>">實地走讀</a></li>
 					<li><a href="<?php //webPageUrlAu('webPageBuild'); ?>">文學營</a></li> -->
@@ -37,7 +37,8 @@
 					<!-- 未登入時顯示  ↓↓↓ -->
 					<li class="title"><a href="login.php">會員中心</a></li>
 					<!-- 已登入時顯示  ↓↓↓ -->
-					<li class="title"><a href="member.php">會員中心</a></li>
+					<!-- <li class="title"><a href="member.php">會員中心</a></li> -->
+					<!-- 已登入時顯示   ↑↑↑ -->
 
 <!-- 					<li class="title"><a href="member.php">會員中心</a></li>
 					<li class="title"><a href="member.php">會員中心</a></li> -->
@@ -73,10 +74,10 @@
 </footer>
 <footer class="copyright">
 	<div class="wrapper cf">
-		<div class="left">Copyright © 2011~2015 四也出版公司 All rights reserved │ 
+		<div class="text-center">
 		客服電話：(02)2506-6111 │ 地 址：臺灣臺北市中山區復興北路290號15樓 │ 客服信箱：writer@4yabookscom</div>
-		<div class="right">
-			<?php designByDFocus(); ?>
+		<div class="text-center">
+			Copyright © 2011~2015 四也出版公司 All rights reserved │ <?php designByDFocus(); ?>
 		</div>
 	</div>
 </footer>

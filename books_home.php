@@ -293,6 +293,7 @@ $(window).load(function() {
 		slideshow      : true,
 		slideshowSpeed : 5000
 	})
+	$(".other_link").addClass('blockMod');
 });
 </script>
 <?php

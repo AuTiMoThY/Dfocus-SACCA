@@ -126,14 +126,12 @@
 				</div>
 				<input type="checkbox" name="agree" id="agree" class="frm__radio">
 				<label for="agree" class="frm__label">我已詳閱並同意四也出版「會員註冊同意聲明」及「隱私權政策」。</label>
-				<div class="other_link">
-					<h3 class="txt-gr2">有購物或其他問題嗎?</h3>
-					<p class="txt-gr2">前往</p>
-					<ul class="cf">
-						<li><a href="business.php" class="txt-gr1">連絡四也</a></li>
-						<li><a href="cart_note.php" class="txt-gr1" target="_blank">購物說明與注意事項</a></li>
-					</ul>
-				</div>
+<?php
+// -------------------------------
+// float block
+// -------------------------------
+  include_once INC_PATH.'floatblock.php';
+?>
 			</div>
 			<div class="btns">
 				<button type="button" class="btn btn-reset btn-material-grey first_btn" onclick="javascript: history.go(-1)">回上一步</button>

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /******************************************/
-/*		DFocus
+/*		SACCA
 /*			by DFocus AuTiMoThY
 /******************************************/
 /*
@@ -63,6 +63,7 @@ html, body {
 body {
   font-family: "PMingLiU", \65B0\7EC6\660E\4F53, Arial, "Helvetica Neue", Helvetica, sans-serif;
   overflow: hidden;
+  padding-top: 90px;
 }
 
 .pic {
@@ -854,7 +855,7 @@ button.btn {
   margin-right: 0.8em;
 }
 .btn-addCart.btn:hover .icon-cart {
-  background: url('../images/iconTxt.png?1437559129') -218px -43px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -218px -43px no-repeat;
 }
 .btn-submit {
   width: 140px;
@@ -947,6 +948,13 @@ button.btn {
   -ms-transform:  translate(1px, 1px);
   -webkit-transform:  translate(1px, 1px);
   transform:  translate(1px, 1px);
+}
+.btn-st1.btn-material-deep-orange.btn {
+  background-color: #9c000e;
+}
+.btn-st1 {
+  width: 130px;
+  text-align: center;
 }
 
 a.btn {
@@ -1119,8 +1127,10 @@ select {
 }
 
 .header_group {
-  position: relative;
   width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
 }
 
 /*========================================================================*\
@@ -1275,7 +1285,7 @@ nav.global_menu a {
 .quick_bar .search_form-btn .btn {
   width: 20px;
   height: 20px;
-  background: url('../images/iconTxt.png?1437559129') 0px 0px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') 0px 0px no-repeat;
   border-radius: 0;
 }
 .quick_bar .search_form-btn .btn:hover {
@@ -1288,17 +1298,21 @@ nav.global_menu a {
   -webkit-transform: translate(1px, 1px);
   transform: translate(1px, 1px);
 }
-.quick_bar .padding {
-  display: block;
-  position: absolute;
-  top: -10%;
-  left: -40%;
-  z-index: 78;
-  width: 180%;
-  height: 180%;
-  background: none;
+
+/* >>> popup **************************************************/
+.popup {
+  display: none;
 }
-.quick_bar-block .tri {
+.popup.open {
+  display: block;
+}
+.popup.toggle {
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.popup .tri {
   position: absolute;
   top: 0.2em;
   width: 0;
@@ -1310,7 +1324,7 @@ nav.global_menu a {
   border-right: 16px solid transparent;
   z-index: 80;
 }
-.quick_bar-block .tri-after {
+.popup .tri-after {
   position: absolute;
   top: 0.3em;
   width: 0;
@@ -1322,11 +1336,23 @@ nav.global_menu a {
   border-right: 14px solid transparent;
   z-index: 81;
 }
-.quick_bar-block .toggle {
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+.popup .padding {
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: -20%;
+  z-index: 78;
+  width: 140%;
+  height: 120%;
+  background: none;
+}
+.popup-wrap.open {
+  position: fixed;
+  top: 61px;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  height: 0;
 }
 
 /* >>> quick_login **************************************************/
@@ -1387,7 +1413,7 @@ nav.global_menu a {
   left: 5px;
   width: 20px;
   height: 25px;
-  background: url('../images/iconTxt.png?1437559129') -21px 0px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -21px 0px no-repeat;
 }
 .quick_login-wrap .tri {
   right: 61px;
@@ -1398,6 +1424,9 @@ nav.global_menu a {
 .quick_login-block {
   width: 340px;
   height: 155px;
+}
+.quick_login-block.login-success {
+  height: auto;
 }
 
 .u_login-form {
@@ -1425,7 +1454,7 @@ nav.global_menu a {
 .u_login-btn .btn {
   width: 100%;
   height: 100%;
-  background: url('../images/iconTxt.png?1437559129') 0px -29px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') 0px -29px no-repeat;
 }
 .u_login .u_register {
   color: #595757;
@@ -1445,7 +1474,7 @@ nav.global_menu a {
   left: -1px;
   width: 28px;
   height: 19px;
-  background: url('../images/iconTxt.png?1437559129') -42px 0px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -42px 0px no-repeat;
 }
 .quick_cart-wrap .tri {
   right: 15px;
@@ -1566,13 +1595,32 @@ nav.global_menu a {
 .u_cart-btn .btn {
   width: 100%;
   height: 100%;
-  background: url('../images/iconTxt.png?1437559129') 0px -61px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') 0px -61px no-repeat;
 }
 .u_cart .book-name {
   min-height: 33px;
   margin-bottom: 0.8em;
   line-height: 1.3;
   font-weight: bold;
+}
+
+.login-success p {
+  border-bottom: 1px dotted #333;
+  padding-bottom: 0.4em;
+  margin-bottom: 0.4em;
+}
+.login-success ul {
+  margin-top: 5px;
+}
+.login-success li {
+  width: 100%;
+  border-top: 1px solid #C6C6C6;
+  margin: 3px 0;
+  text-align: center;
+}
+.login-success .btns {
+  margin: 0.8em auto;
+  text-align: center;
 }
 
 footer.global_ft {
@@ -1621,7 +1669,7 @@ footer.copyright a:hover {
 .sitemap-wrap {
   position: relative;
   height: 100%;
-  padding-right: 1em;
+  padding-right: 0.5em;
 }
 .sitemap-wrap:before {
   content: '';
@@ -1723,7 +1771,7 @@ footer.copyright a:hover {
 
 .footer-inf {
   padding-top: 3em;
-  padding-left: 3em;
+  padding-left: 1em;
 }
 .footer-inf li {
   position: relative;
@@ -1945,17 +1993,17 @@ div.tab_container h2 {
 .blockMod__hot .blockMod-header h2 {
   width: 125px;
   height: 43px;
-  background: url('../images/iconTxt.png?1437559129') -250px 0px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -250px 0px no-repeat;
 }
 .blockMod__latest .blockMod-header h2 {
   width: 269px;
   height: 26px;
-  background: url('../images/iconTxt.png?1437559129') -250px -44px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -250px -44px no-repeat;
 }
 .blockMod__awarded .blockMod-header h2 {
   width: 263px;
   height: 34px;
-  background: url('../images/iconTxt.png?1437559129') -250px -71px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -250px -71px no-repeat;
 }
 .blockMod__booklist .blockMod-header {
   border-bottom: 1px dotted #000;
@@ -1971,7 +2019,7 @@ div.tab_container h2 {
   left: 2em;
   width: 175px;
   height: 52px;
-  background: url('../images/iconTxt.png?1437559129') -520px 0px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -520px 0px no-repeat;
 }
 .blockMod-header.blockMod__booklistpage-header::after {
   content: '';
@@ -1981,7 +2029,7 @@ div.tab_container h2 {
   bottom: 0;
   width: 172px;
   height: 36px;
-  background: url('../images/iconTxt.png?1437559129') -520px -53px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -520px -53px no-repeat;
 }
 .blockMod-header.blockMod__booklistpage-header h2 {
   width: 100%;
@@ -2366,7 +2414,7 @@ div.tab_container h2 {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url('../images/iconTxt.png?1437559129') -218px -29px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -218px -29px no-repeat;
   margin: 0 0.6em;
   vertical-align: -0.1ex;
 }
@@ -2880,13 +2928,79 @@ header.title h2, header.title h3 {
 .about-art.our_group {
   width: 80%;
   margin: auto;
-  padding-bottom: 100px;
-  background: url('../images/bg-aboutGroup.jpg?1439183145') -80px 0 no-repeat;
+}
+.about-art.our_group:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0;
+  background: url('../images/aboutIcon3.jpg?1439539894') 0 0 no-repeat;
+  padding-bottom: 25.37917%;
+  background-position: -81px 50%;
 }
 .about-art.our_group li {
+  position: relative;
   width: 100%;
   float: none;
   margin-bottom: 0.4em;
+}
+.about-art.our_group li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0.375em;
+  right: 4.375em;
+  z-index: 2;
+  width: 25px;
+  height: 25px;
+  background: url('../images/iconTxt.png?1439539049') -110px -31px no-repeat;
+  background-color: #eeeeeb;
+}
+.about-art.our_group li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1.125em;
+  right: 4.9375em;
+  z-index: 1;
+  width: 6px;
+  height: 100%;
+  background: url('../images/dot.png?1439538858') 50% 0 repeat-y;
+}
+.about-art.our_group .people1_icon {
+  position: absolute;
+  right: 86px;
+  bottom: 0;
+  width: 156px;
+  height: 150px;
+  background: url('../images/p1icon.png?1439540711') 0 0 no-repeat;
+}
+.about-art.our_group .people2_icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+  width: 162px;
+  height: 294px;
+  background: url('../images/p2icon.png?1439541028') 0 0 no-repeat;
+}
+.about-art.our_group .people3_icon {
+  position: absolute;
+  right: 10px;
+  bottom: -18px;
+  z-index: 11;
+  width: 191px;
+  height: 209px;
+  background: url('../images/p3icon.png?1439541135') 0 0 no-repeat;
+}
+.about-art.our_group .people5_icon {
+  position: absolute;
+  top: -25px;
+  right: 90px;
+  z-index: 11;
+  width: 127px;
+  height: 123px;
+  background: url('../images/p5icon.png?1439541386') 0 0 no-repeat;
 }
 .about-art .group-pic {
   width: 167px;
@@ -3105,6 +3219,10 @@ header.title h2, header.title h3 {
   width: 710px;
 }
 
+.biz_txt li {
+  height: 31px;
+}
+
 .page_path .btn-golist {
   position: absolute;
   top: 0;
@@ -3280,7 +3398,7 @@ header.title h2, header.title h3 {
   display: inline-block;
   width: 18px;
   height: 15px;
-  background: url('../images/iconTxt.png?1437559129') -219px -63px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -219px -63px no-repeat;
   vertical-align: -0.4ex;
   margin-right: 0.5em;
 }
@@ -3428,7 +3546,7 @@ header.title h2, header.title h3 {
   display: inline-block;
   width: 18px;
   height: 15px;
-  background: url('../images/iconTxt.png?1437559129') -219px -63px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -219px -63px no-repeat;
   vertical-align: -0.4ex;
   margin-right: 0.5em;
 }
@@ -3712,10 +3830,13 @@ header.title h2, header.title h3 {
   margin-right: 0.3em;
 }
 
+/*========================================================================*\
+		>>	other_link
+\*========================================================================*/
 .other_link {
   position: absolute;
-  top: 2.7em;
-  right: 1em;
+  top: 9em;
+  right: 3em;
   width: 220px;
   height: auto;
   border: 1px solid #bcbcbc;
@@ -3732,7 +3853,7 @@ header.title h2, header.title h3 {
   display: inline-block;
   width: 16px;
   height: 26px;
-  background: url('../images/iconTxt.png?1437559129') -219px -79px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -219px -79px no-repeat;
   vertical-align: -1ex;
   margin-right: 0.8em;
 }
@@ -3744,7 +3865,10 @@ header.title h2, header.title h3 {
 }
 .other_link li {
   position: relative;
-  font-size: 0.8125em;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 19px;
+  line-height: 1.2rem;
 }
 .other_link li:before {
   content: '';
@@ -3761,6 +3885,13 @@ header.title h2, header.title h3 {
 .other_link.blockMod {
   position: static;
   margin-bottom: 1.2em;
+}
+.signup-block .other_link {
+  top: 2.7em;
+  right: 1em;
+}
+.signup-block .other_link li {
+  margin-bottom: 0;
 }
 
 .terms {
@@ -4238,6 +4369,17 @@ header.title h2, header.title h3 {
   line-height: 30px;
 }
 
+.nosearchresult {
+  width: 100%;
+  min-height: 500px;
+  text-align: center;
+  line-height: 80px;
+}
+
+.searchsuccess {
+  min-height: 500px;
+}
+
 /*------------------------------------------------------------------------*\
 /*------------------------------------------------------------------------*\
 /*========================================================================*\
@@ -4524,42 +4666,42 @@ i.icon {
 .sacca-tele .icon {
   width: 18px;
   height: 21px;
-  background: url('../images/iconTxt.png?1437559129') -71px 0px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -71px 0px no-repeat;
 }
 .sacca-time .icon {
   width: 26px;
   height: 21px;
-  background: url('../images/iconTxt.png?1437559129') -90px 0px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -90px 0px no-repeat;
 }
 .sacca-addr .icon {
   width: 23px;
   height: 21px;
-  background: url('../images/iconTxt.png?1437559129') -117px 0px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -117px 0px no-repeat;
 }
 .sacca-mail .icon {
   width: 19px;
   height: 21px;
-  background: url('../images/iconTxt.png?1437559129') -141px 0px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -141px 0px no-repeat;
 }
 .asideMod__age .icon-asideHeader {
   width: 25px;
   height: 22px;
-  background: url('../images/iconTxt.png?1437559129') -161px -1px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -161px -1px no-repeat;
 }
 .asideMod__cate .icon-asideHeader {
   width: 29px;
   height: 23px;
-  background: url('../images/iconTxt.png?1437559129') -187px 0px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -187px 0px no-repeat;
 }
 .icon-xls {
   width: 27px;
   height: 33px;
-  background: url('../images/iconTxt.png?1437559129') -161px -29px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -161px -29px no-repeat;
 }
 .icon-pdf {
   width: 26px;
   height: 34px;
-  background: url('../images/iconTxt.png?1437559129') -189px -29px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -189px -29px no-repeat;
 }
 .file_download .icon {
   display: block;
@@ -4574,7 +4716,7 @@ i.icon {
 .icon-cart {
   width: 28px;
   height: 19px;
-  background: url('../images/iconTxt.png?1437559129') -218px 0px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -218px 0px no-repeat;
 }
 .icon-tag .r1, .icon-tag .p1 {
   fill: #595757;
@@ -4603,17 +4745,17 @@ i.icon {
 .icon-join-1 {
   width: 38px;
   height: 42px;
-  background: url('../images/iconTxt.png?1437559129') -219px -106px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -219px -106px no-repeat;
 }
 .icon-join-2 {
   width: 38px;
   height: 37px;
-  background: url('../images/iconTxt.png?1437559129') -219px -149px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -219px -149px no-repeat;
 }
 .icon-join-3 {
   width: 38px;
   height: 40px;
-  background: url('../images/iconTxt.png?1437559129') -219px -187px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -219px -187px no-repeat;
 }
 .icon-triL {
   display: inline-block;
@@ -4629,13 +4771,13 @@ i.icon {
 .icon-payment1 {
   width: 31px;
   height: 41px;
-  background: url('../images/iconTxt.png?1437559129') -260px -106px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -260px -106px no-repeat;
   margin: 0 0.5em 0 0.3em;
 }
 .icon-payment2 {
   width: 35px;
   height: 31px;
-  background: url('../images/iconTxt.png?1437559129') -258px -148px no-repeat;
+  background: url('../images/iconTxt.png?1439539049') -258px -148px no-repeat;
   margin: 0 0.5em 0 0.3em;
 }
 
@@ -4718,6 +4860,12 @@ i.icon {
   width: 16px;
   height: 16px;
 }
+.search-tag .svg_icon_tag {
+  width: 16px;
+  height: 16px;
+  vertical-align: -0.4ex;
+  fill: #9c000e;
+}
 
 .svg_icon_people {
   width: 15px;
@@ -4725,7 +4873,7 @@ i.icon {
   fill: #9c000e;
 }
 .resource_page .svg_icon_people {
-  vertical-align: -0.4ex;
+  vertical-align: middle;
 }
 
 .biz_page #shape-cart .bg1, .biz_page #shape-cart .bg2, .biz_page #shape-cart .bg3 {
@@ -4741,7 +4889,7 @@ i.icon {
 .resource_page .svg_icon_download {
   width: 18px;
   height: 21px;
-  vertical-align: -0.9ex;
+  vertical-align: middle;
   fill: #595757;
 }
 

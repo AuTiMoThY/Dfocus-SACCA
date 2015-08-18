@@ -83,12 +83,13 @@
 							<input type="text" name="" id="birthday" class="frm__field s2 ib" placeholder="">
 						</span>
 					</li>
-<!-- 					<li>
+					<li>
 						<span class="frm--dfocus required">
 							<label for="" class="frm__label ib">電子信箱</label>
-							<input type="text" name="" id="" class="frm__field ib" placeholder="請填入您的常用e-mail信箱">
+							<!-- 帶入會員帳號  ↓↓↓ -->
+							<input type="text" name="" id="" class="frm__field ib" value="yoman@gmail.com" placeholder="請填入您的常用e-mail信箱">
 						</span>
-					</li> -->
+					</li>
 					<li>
 						<span class="frm--dfocus required">
 							<label for="" class="frm__label ib">白天聯繫電話</label>
@@ -178,14 +179,12 @@
 						</div>
 					</li>
 				</ul>
-				<div class="other_link">
-					<h3 class="txt-gr2">有購物或其他問題嗎?</h3>
-					<p class="txt-gr2">前往</p>
-					<ul class="cf">
-						<li><a href="business.php" class="txt-gr1">連絡四也</a></li>
-						<li><a href="cart_note.php" class="txt-gr1" target="_blank">購物說明與注意事項</a></li>
-					</ul>
-				</div>
+<?php
+// -------------------------------
+// float block
+// -------------------------------
+  include_once INC_PATH.'floatblock.php';
+?>
 			</div>
 			<div class="btns">
 				<button type="reset" class="btn btn-reset btn-material-grey first_btn">取消重填</button>
@@ -229,7 +228,6 @@ function isNumberKey(evt){
     return true;
 }
 $(function(){
-
 	// $(".js-subNavItem5").addClass('active');
 	$("#birthday").datepicker({
 		monthNamesShort: [ "01月", "02月", "03月", "04月", "05月", "06月", "07月", "08月", "09月", "10月", "11月", "12月" ],

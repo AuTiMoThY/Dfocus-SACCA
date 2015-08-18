@@ -70,14 +70,12 @@
 		</div>
 	</div>
 </div>
-<div class="row">
+<!-- <div class="row">
 	<div class="payment-result">付款方式：線上刷卡</div>
-</div>
-<!-- 使用匯款or劃撥時顯示  ↓↓↓ -->
+</div> -->
 <div class="row">
 	<div class="payment-result">付款方式：郵政劃撥 / 銀行匯款 / ATM轉帳</div>
 </div>
-<!-- 使用匯款or劃撥時顯示  ↑↑↑ -->
 <div class="row">
 	<table class="cart-table">
 		<tr>

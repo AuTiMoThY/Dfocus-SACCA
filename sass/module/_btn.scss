@@ -251,6 +251,14 @@ button {
 			@include simple-transform(false, false, 1px, 1px);
 		}
 	}
+	&-st1.btn-material-deep-orange.btn {
+		background-color: #9c000e;
+	}
+	&-st1 {
+		// display: block;
+		width: 130px;
+		text-align: center;
+	}
 
 }//.btn
 

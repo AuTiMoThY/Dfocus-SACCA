@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /******************************************/
-/*		DFocus
+/*		SACCA
 /*			by DFocus AuTiMoThY
 /******************************************/
 /*
@@ -127,6 +127,16 @@
 @import "project/_page_resource";
 @import "project/_page_member";
 @import "project/_page_cart";
+
+.nosearchresult {
+	width: 100%;
+	min-height: 500px;
+	text-align: center;
+	line-height: 80px;
+}
+.searchsuccess {
+	min-height: 500px;
+}
 
 /*------------------------------------------------------------------------*\
 /*------------------------------------------------------------------------*\

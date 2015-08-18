@@ -228,16 +228,16 @@
 <div class="row payment_method">
 	<hgroup class="text-right">
 		<h2 class="txtImg-title-payment hide_txt left">付款方式</h2>
-		<input type="radio" name="payment" id="payment1" class="frm__radio ib" checked>
-		<label for="payment1" class="frm__label ib">
+		<!-- <input type="radio" name="payment" id="payment1" class="frm__radio ib" checked> -->
+		<div for="" class="frm__label ib">
 			<i class="icon icon-payment1 ib"></i>
 			郵政劃撥 / 銀行匯款 / ATM轉帳 (恕不內扣手續費)
-		</label>
-		<input type="radio" name="payment" id="payment2" class="frm__radio ib">
+		</div>
+<!-- 		<input type="radio" name="payment" id="payment2" class="frm__radio ib">
 		<label for="payment2" class="frm__label ib">
 			<i class="icon icon-payment2 ib"></i>
 			線上刷卡
-		</label>
+		</label> -->
 	</hgroup>
 	<div class="payment1-block">
 		<h3>郵政劃撥</h3>

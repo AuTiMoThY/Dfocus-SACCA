@@ -36,7 +36,7 @@ footer {
 	&-wrap {
 		position: relative;
 		height: 100%;
-		padding-right: 1em;
+		padding-right: 0.5em;
 		&:before {
 			@include psudoClass;
 			@include vc;
@@ -107,7 +107,7 @@ footer {
 
 .footer-inf {
 	padding-top: 3em;
-	padding-left: 3em;
+	padding-left: 1em;
 	li {
 		position: relative;
 		float: none;

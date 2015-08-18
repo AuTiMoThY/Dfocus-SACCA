@@ -55,6 +55,7 @@
 					專欄分類：
 				</label>
 				<select name="" id="filterSelect" class="filter-select ib">
+					<option value="">所有</option>
 					<option value=".taiwan">臺灣歷史專欄</option>
 					<option value=".world">世界歷史專欄</option>
 					<option value=".theme">主題歷史專欄</option>
@@ -229,33 +230,6 @@
 $(function(){
 
 	$(".js-subNavItem3").addClass('active');
-
-(function(){
-	
-	var scrollMagicController = new ScrollMagic.Controller();
-
-	var mapAction = TweenMax.fromTo('#mapAction', 0.5,
-	{
-		// 'background-position': '0 0',
-		'opacity': '0',
-		'transform': 'scale(0.5, 0.5)'
-	},
-	{
-		// 'background-position': '0 10px'
-		'opacity': '1',
-		'transform': 'scale(1, 1)'
-	});
-	var scene1 = new ScrollMagic.Scene({
-		triggerElement: '#mapTrigger',
-		offset: 0,
-		// duration: 100
-	})
-	.setClassToggle('body', 'mapAction-active')
-	.setTween(mapAction)
-	// .triggerHook(0)
-	// .addIndicators({name: "1 (duration: 0)"})
-	.addTo(scrollMagicController);
-});
 
 
 })

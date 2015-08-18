@@ -391,7 +391,6 @@ i.icon {
 		margin: auto;
 	}
 }
-.svg_icon_people {}
 .svg_icon_tag {
 	.history-tag & {
 		@include wh2(16 15);
@@ -403,12 +402,17 @@ i.icon {
 	.filter_history & {
 		@include wh2(16);
 	}
+	.search-tag & {
+		@include wh2(16);
+		vertical-align: -0.4ex;
+		fill: color($colors, nor, 8);
+	}
 }
 .svg_icon_people {
 	@include wh2(15 16);
 	fill: color($colors, nor, 8);
 	.resource_page & {
-		vertical-align: -0.4ex;
+		vertical-align: middle;
 	}
 }
 #shape-cart {
@@ -428,7 +432,7 @@ i.icon {
 .svg_icon_download {
 	.resource_page & {
 		@include wh2(18 21);
-		vertical-align: -0.9ex;
+		vertical-align: middle;
 		fill: #595757;
 	}
 }
