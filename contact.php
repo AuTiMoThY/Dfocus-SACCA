@@ -60,20 +60,38 @@
 		</svg>
 	</div>
 	<div class="biz_txt col">
-		<p class="txt-gr1">親愛的讀者朋友您好：<br>感謝您對四也出版的支持與愛護，如果您在本網站遇到任何問題（無論是下載目錄、活動報名、書籍資訊等），<br>有任何建議，或有任何需求與提案，都歡迎您寫E-MAIL給我們，或直接電話與我們聯繫。
+		<p class="txt-gr1">親愛的讀者朋友您好：<br>感謝您對四也出版的支持與愛護，如果您在本網站遇到任何問題（無論是購書、下載目錄、活動報名、書籍資訊等），<br>有任何建議，或有任何需求與提案，都歡迎您寫E-MAIL給我們，或直接電話與我們聯繫。
 		</p>
 		<ul>
 			<li>
-				<svg class="icon svg_icon_mail ib">
-					<use xlink:href="#shape-mail"></use>
-				</svg>
-				<span class="txt-r1 ib">四也服務信箱： writer@4yabooks.com</span>
-			</li>
-			<li>
-				<svg class="icon svg_icon_phone ib ml">
+				<svg class="icon svg_icon_phone ib">
 					<use xlink:href="#shape-phone"></use>
 				</svg>
-				<span class="txt-r1 ib">四也洽詢專線：(02)2506-6111 ext. 866</span>
+				<span class="txt-r1 ib">電   話： (02)2506-6111 ext.889</span>
+			</li>
+			<li style="width:60%;">
+				<svg class="icon svg_icon_mail ib ml">
+					<use xlink:href="#shape-mail"></use>
+				</svg>
+				<span class="txt-r1 ib">E-mail：writer@4yabooks.com</span>
+			</li>
+			<li>
+				<svg class="icon svg_icon_building ib">
+					<use xlink:href="#shape-building"></use>
+				</svg>
+				<span class="txt-r1 ib">地   址：10478 臺北市中山區復興北路290號15樓</span>
+			</li>
+			<li>
+				<svg class="icon svg_icon_hrtime ib ml">
+					<use xlink:href="#shape-hrtime"></use>
+				</svg>
+				<span class="txt-r1 ib">上班時間：上午9:00~下午6:00</span>
+			</li>
+			<li>
+				<svg class="icon svg_icon_tax ib ml">
+					<use xlink:href="#shape-tax"></use>
+				</svg>
+				<span class="txt-r1 ib">傳   真：(02)2507-3111</span>
 			</li>
 		</ul>
 	</div>
@@ -169,7 +187,7 @@
 	</form>
 </div>
 </section>
-<section class="row ">
+<!-- <section class="row ">
 <div class="wrapper">
 	<div class="icon_bg col">
 		<svg class="icon svg_icon_cart">
@@ -177,7 +195,7 @@
 		</svg>
 	</div>
 	<div class="biz_txt col">
-		<!-- <p class="txt-gr1">親愛的讀者朋友您好：<br>若您遇到相關書籍購買或寄送等問題，可以利用電話，直接和我們連繫，我們將有專人處理您所遇到的相關問題。</p> -->
+		<!-- <p class="txt-gr1">親愛的讀者朋友您好：<br>若您遇到相關書籍購買或寄送等問題，可以利用電話，直接和我們連繫，我們將有專人處理您所遇到的相關問題。</p> --
 		<p class="txt-r1">四也出版書籍購買等服務專線：</p>
 		<ul>
 			<li>
@@ -213,7 +231,7 @@
 		</ul>
 	</div>
 </div>
-</section>
+</section> -->
 
 <section id="mapAction" class="fixBg">
 	<div id="mapTrigger" class="map"></div>

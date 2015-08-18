@@ -75,7 +75,7 @@
 <footer class="copyright">
 	<div class="wrapper cf">
 		<div class="text-center">
-		客服電話：(02)2506-6111 │ 地 址：臺灣臺北市中山區復興北路290號15樓 │ 客服信箱：writer@4yabookscom</div>
+		客服電話：(02)2506-6111 │ 地 址：臺灣臺北市中山區復興北路290號15樓 │ 客服信箱：writer@4yabooks.com</div>
 		<div class="text-center">
 			Copyright © 2011~2015 四也出版公司 All rights reserved │ <?php designByDFocus(); ?>
 		</div>
